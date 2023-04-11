@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import BackgroundCircles from './BackgroundCircles';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import Link from 'next/link';
 
 export default function Hero() {
   const [text, count] = useTypewriter({
@@ -25,6 +26,7 @@ export default function Hero() {
           alt='hero-picture'
           className='rounded-full h-40 w-40 object-cover'
         />
+
         <div className='z-20'>
           <h2 className='text-small uppercase text-gray-700 tracking-[15px] mt-5'>
             Software Engineer
@@ -33,6 +35,23 @@ export default function Hero() {
             <span className='mr-2'>{text}</span>
             <Cursor cursorColor='#f7ab0a' />
           </h1>
+
+          <div className='pt-5'>
+            <Link
+              href='/resume.pdf'
+              className='px-6 py-2 my-1 hover:border border-[rgb(54,69,79)] rounded-full uppercase text-sm tracking-widest text-gray-700 transition-all hover:text-[#f7ab08]/60'
+              target='_blank'
+            >
+              Resume
+            </Link>
+
+            <Link
+              href='mailto:eddiekuo97@gmail.com'
+              className='px-6 py-2 my-1 hover:border hover:border-[rgb(54,69,79)] rounded-full uppercase text-sm tracking-widest text-gray-700 transition-all hover:text-[#f7ab08]/60'
+            >
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     </div>
