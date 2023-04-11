@@ -5,7 +5,7 @@ import CustomLink from './CustomLink';
 
 export default function Header() {
   return (
-    <header className='w-full h-20 z-[100] flex justify-between items-center px-24 py-8 max-w-full mx-auto'>
+    <header className='w-full h-20 z-[100] flex justify-between items-center px-24 py-8 mx-auto'>
       <motion.div
         className='flex'
         initial={{

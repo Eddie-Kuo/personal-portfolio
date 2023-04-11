@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 
 export default function Home() {
   return (
-    <div className='h-screen'>
+    <div className='h-screen w-full'>
       <Head>
         <title>Eddie Kuo</title>
       </Head>
