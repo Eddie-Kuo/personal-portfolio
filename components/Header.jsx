@@ -1,16 +1,47 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
+import { motion } from 'framer-motion';
 import CustomLink from './CustomLink';
 
 export default function Header() {
   return (
     <header className='sticky w-full h-20 z-[100] flex justify-between items-center px-24 py-8 max-w-full mx-auto'>
-      <nav className='flex'>
+      <motion.div
+        className='flex'
+        initial={{
+          x: -500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+      >
         <CustomLink href='/' title='Home' className='mr-6' />
         <CustomLink href='/about' title='About' className='mx-6' />
         <CustomLink href='/projects' title='Projects' className='ml-6' />
-      </nav>
-      <div className='flex space-x-5'>
+      </motion.div>
+      <motion.div
+        className='flex space-x-5'
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+      >
         <SocialIcon
           url='https://www.linkedin.com/in/eddie-kuo17/'
           fgColor='#424242'
@@ -31,7 +62,7 @@ export default function Header() {
           fgColor='#424242'
           bgColor='transparent'
         />
-      </div>
+      </motion.div>
     </header>
   );
 }
