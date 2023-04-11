@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 import CustomLink from './CustomLink';
 
 export default function Header() {
@@ -11,11 +11,26 @@ export default function Header() {
         <CustomLink href='/projects' title='Projects' className='ml-6' />
       </nav>
       <div className='flex space-x-5'>
-        <p className='text-xl'>S</p>
-        <p className='text-xl'>S</p>
-        <p className='text-xl'>S</p>
-        <p className='text-xl'>S</p>
-        <p className='text-xl'>S</p>
+        <SocialIcon
+          url='https://www.linkedin.com/in/eddie-kuo17/'
+          fgColor='#424242'
+          bgColor='transparent'
+        />
+        <SocialIcon
+          url='https://github.com/Eddie-Kuo'
+          fgColor='#424242'
+          bgColor='transparent'
+        />
+        <SocialIcon
+          url='https://www.instagram.com/the_eddiekuo/'
+          fgColor='#424242'
+          bgColor='transparent'
+        />
+        <SocialIcon
+          url='https://www.facebook.com/eddie.kuo.520/'
+          fgColor='#424242'
+          bgColor='transparent'
+        />
       </div>
     </header>
   );
