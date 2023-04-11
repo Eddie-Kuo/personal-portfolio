@@ -21,15 +21,15 @@ export default function Home() {
         <title>Eddie Kuo | Home</title>
       </Head>
       <main>
-        <div className='h-screen w-full flex justify-center items-center text-center'>
-          <div className='flex flex-col items-center justify-center'>
+        <div className='h-screen flex justify-center items-center text-center'>
+          <div className='flex flex-col items-center justify-center text-center'>
             <BackgroundCircles />
             <Image
               src='https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/IMG_1218%202.JPG'
               width={200}
               height={200}
               alt='hero-picture'
-              className='rounded-full h-40 w-40 object-cover'
+              className='rounded-full h-20 w-20 md:h-40 md:w-40 object-cover'
             />
 
             <div className='z-20'>
