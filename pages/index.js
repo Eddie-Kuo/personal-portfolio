@@ -8,9 +8,6 @@ export default function Home() {
       <Head>
         <title>Eddie Kuo</title>
       </Head>
-
-      <Header />
-
       <main>
         <Hero />
       </main>
