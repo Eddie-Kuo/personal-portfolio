@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export default function BackgroundCircles() {
+export default function BackgroundCircles({ className = '' }) {
   return (
     <motion.div
-      className='flex justify-center items-center z-0'
+      className={className}
       initial={{ opacity: 0 }}
       animate={{
         scale: [1, 2, 2, 3, 1],

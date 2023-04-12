@@ -9,7 +9,7 @@ export default function about() {
         <title>Eddie Kuo | About</title>
       </Head>
       <main>
-        <div>
+        <div className='h-screen flex justify-center items-center'>
           <p>About Component</p>
         </div>
       </main>
