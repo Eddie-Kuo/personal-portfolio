@@ -3,14 +3,21 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import CustomLink from './CustomLink';
 
+//*responsiveness of home page + header into side menu
+//* need better adaptability for small-medium screens
+//* make sure that the circles stay in main and not go into the header
+
 export default function Header() {
   return (
-    <header className='sticky w-full h-20 z-[100] flex justify-between items-center px-24 py-8 mx-auto'>
-      <div className='md:hidden'>
-        <p>Menu</p>
-      </div>
+    <header className='sticky w-full h-20 z-[100] flex justify-between items-center px-16 py-8 mx-auto'>
+      <button className='sm:hidden flex flex-col justify-center items-center'>
+        <span className='bg-[#161616] w-6 h-0.5 rounded-sm'></span>
+        <span className='bg-[#161616] w-6 h-0.5 rounded-sm my-1'></span>
+        <span className='bg-[#161616] w-6 h-0.5 rounded-sm'></span>
+      </button>
+
       <motion.div
-        className='hidden md:flex'
+        className='hidden sm:flex mr-10'
         initial={{
           x: -500,
           opacity: 0,
@@ -38,7 +45,7 @@ export default function Header() {
         />
       </motion.div>
       <motion.div
-        className='hidden md:flex space-x-5'
+        className='hidden sm:flex space-x-5'
         initial={{
           x: 500,
           opacity: 0,
@@ -73,6 +80,7 @@ export default function Header() {
           fgColor='#424242'
           bgColor='transparent'
         />
+        <span className='w-10 h-10 bg-black rounded-full'></span>
       </motion.div>
     </header>
   );
