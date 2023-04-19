@@ -8,12 +8,34 @@ import CustomLink from './CustomLink';
 //* make sure that the circles stay in main and not go into the header
 
 export default function Header() {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  function handleClick() {
+    setIsOpen(!isOpen);
+  }
+  console.log(isOpen);
+
   return (
     <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto z-0'>
-      <button className='md:hidden flex flex-col justify-center items-center'>
-        <span className='bg-[#161616] w-6 h-0.5 rounded-sm'></span>
-        <span className='bg-[#161616] w-6 h-0.5 rounded-sm my-1'></span>
-        <span className='bg-[#161616] w-6 h-0.5 rounded-sm'></span>
+      <button
+        className='md:hidden flex flex-col justify-center items-center'
+        onClick={handleClick}
+      >
+        <span
+          className={`bg-[#161616] w-6 h-0.5 rounded-sm transition-all duration-300 block ${
+            isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
+          }`}
+        ></span>
+        <span
+          className={`bg-[#161616] w-6 h-0.5 rounded-sm transition-all duration-100 block my-0.5 ${
+            isOpen ? 'opacity-0' : 'opacity-100'
+          }`}
+        ></span>
+        <span
+          className={`bg-[#161616] w-6 h-0.5 rounded-sm transition-all duration-300 block ${
+            isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
+          }`}
+        ></span>
       </button>
 
       <motion.div
@@ -80,7 +102,7 @@ export default function Header() {
           fgColor='#424242'
           bgColor='transparent'
         />
-        <span className='w-8 h-8 bg-black rounded-full'></span>
+        <span className='w-8 h-8 bg-black rounded-full self-center'></span>
       </motion.div>
     </header>
   );
