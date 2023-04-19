@@ -18,7 +18,7 @@
 //   return (
 //     <div className='h-screen w-full flex justify-center items-center text-center'>
 //       <div className='flex flex-col items-center justify-center'>
-//         <BackgroundCircles className='relative flex justify-center items-center z-0' />
+//         <BackgroundCircles className='relative flex justify-center items-center md:mt-36' />
 //         <Image
 //           src='https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/IMG_1218%202.JPG'
 //           width={200}

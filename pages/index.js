@@ -22,21 +22,20 @@ export default function Home() {
       </Head>
       <main>
         <div className='h-screen flex flex-col justify-center items-center text-center overflow-x-hidden'>
-          {/* <div className='absolute flex flex-col items-center text-center'> */}
-          <BackgroundCircles className='relative flex justify-center items-center md:mt-36' />
+          <BackgroundCircles />
           <Image
             src='https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/IMG_1218%202.JPG'
             width={200}
             height={200}
             alt='hero-picture'
-            className='rounded-full h-20 w-20 md:h-40 md:w-40 object-cover'
+            className='rounded-full h-40 w-40 object-cover'
           />
 
           <div className='z-20'>
             <h2 className='text-small uppercase text-gray-700 tracking-[15px] mt-5 px-5'>
               Software Engineer
             </h2>
-            <h1 className='text-2xl lg:text-5xl font-semibold px-5'>
+            <h1 className='text-xl md:text-4xl lg:text-5xl font-semibold px-5'>
               <span className='mr-2'>{text}</span>
               <Cursor cursorColor='#f7ab0a' />
             </h1>
@@ -58,7 +57,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          {/* </div> */}
         </div>
       </main>
     </>

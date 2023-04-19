@@ -9,15 +9,15 @@ import CustomLink from './CustomLink';
 
 export default function Header() {
   return (
-    <header className='sticky w-full h-20 z-[100] flex justify-between items-center px-16 py-8 mx-auto'>
-      <button className='sm:hidden flex flex-col justify-center items-center'>
+    <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto z-0'>
+      <button className='md:hidden flex flex-col justify-center items-center'>
         <span className='bg-[#161616] w-6 h-0.5 rounded-sm'></span>
         <span className='bg-[#161616] w-6 h-0.5 rounded-sm my-1'></span>
         <span className='bg-[#161616] w-6 h-0.5 rounded-sm'></span>
       </button>
 
       <motion.div
-        className='hidden sm:flex mr-10'
+        className='hidden md:flex mr-10'
         initial={{
           x: -500,
           opacity: 0,
@@ -45,7 +45,7 @@ export default function Header() {
         />
       </motion.div>
       <motion.div
-        className='hidden sm:flex space-x-5'
+        className='hidden md:flex space-x-5'
         initial={{
           x: 500,
           opacity: 0,
@@ -80,7 +80,7 @@ export default function Header() {
           fgColor='#424242'
           bgColor='transparent'
         />
-        <span className='w-10 h-10 bg-black rounded-full'></span>
+        <span className='w-8 h-8 bg-black rounded-full'></span>
       </motion.div>
     </header>
   );
