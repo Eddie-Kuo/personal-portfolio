@@ -12,24 +12,24 @@ export default function Header() {
   }
 
   return (
-    <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto'>
+    <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto bg-light'>
       <button
-        className='lg:hidden flex flex-col justify-center items-center mt-6 -ml-4 sm:mt-0 sm:ml-0 z-40'
+        className='lg:hidden flex flex-col justify-center items-center mt-6 -ml-4 sm:mt-0 sm:ml-0 z-40 group hover:border hover:border-[rgb(54,69,79)] rounded-full h-10 w-10'
         onClick={handleClick}
       >
         <span
-          className={`bg-[#161616] w-6 h-0.5 rounded-sm transition-all duration-300 block ${
-            isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
+          className={`bg-dark w-6 h-0.5 rounded-sm transition-all duration-300 block ${
+            isOpen ? 'rotate-135 translate-y-1' : '-translate-y-0.5'
           }`}
         ></span>
         <span
-          className={`bg-[#161616] w-6 h-0.5 rounded-sm transition-all duration-100 block my-0.5 ${
+          className={`bg-dark w-6 h-0.5 rounded-sm transition-all duration-100 block my-0.5 ${
             isOpen ? 'opacity-0' : 'opacity-100'
           }`}
         ></span>
         <span
-          className={`bg-[#161616] w-6 h-0.5 rounded-sm transition-all duration-300 block ${
-            isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
+          className={`bg-dark w-6 h-0.5 rounded-sm transition-all duration-300 block ${
+            isOpen ? '-rotate-135 -translate-y-1' : 'translate-y-0.5'
           }`}
         ></span>
       </button>
@@ -50,16 +50,12 @@ export default function Header() {
           duration: 1.5,
         }}
       >
-        <CustomLink href='/' title='Home' className='mr-6 text-[#161616]' />
-        <CustomLink
-          href='/about'
-          title='About'
-          className='mx-6 text-[#161616]'
-        />
+        <CustomLink href='/' title='Home' className='mr-6 text-dark' />
+        <CustomLink href='/about' title='About' className='mx-6 text-dark' />
         <CustomLink
           href='/projects'
           title='Projects'
-          className='ml-6 text-[#161616]'
+          className='ml-6 text-dark'
         />
       </motion.div>
       <motion.div
@@ -102,7 +98,7 @@ export default function Header() {
           bgColor='transparent'
           target='_blank'
         />
-        <span className='w-8 h-8 bg-black rounded-full self-center'></span>
+        <span className='w-8 h-8 bg-dark rounded-full self-center'></span>
       </motion.div>
 
       {isOpen ? (
@@ -116,25 +112,21 @@ export default function Header() {
             className='hidden lg:flex flex-col justify-center items-center fixed top-0 left-0 p-10'
             onClick={handleClick}
           >
-            <span className='bg-[#161616] w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
-            <span className='bg-[#161616] w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
+            <span className='bg-dark w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
+            <span className='bg-dark w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
           </button>
 
           <nav className='flex flex-col sm:flex-row justify-center items-center pt-24 px-36'>
-            <PopupNavLink
-              href='/'
-              title='Home'
-              className='sm:mr-6 text-[#161616]'
-            />
+            <PopupNavLink href='/' title='Home' className='sm:mr-6 text-dark' />
             <PopupNavLink
               href='/about'
               title='About'
-              className='sm:mx-6 text-[#161616]'
+              className='sm:mx-6 text-dark'
             />
             <PopupNavLink
               href='/projects'
               title='Projects'
-              className='sm:ml-6 text-[#161616]'
+              className='sm:ml-6 text-dark'
             />
           </nav>
 

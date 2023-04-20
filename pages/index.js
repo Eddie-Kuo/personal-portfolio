@@ -20,7 +20,7 @@ export default function Home() {
       <Head>
         <title>Eddie Kuo | Home</title>
       </Head>
-      <main className='flex justify-center items-center'>
+      <main className='flex justify-center items-center bg-light'>
         <div className='h-screen flex flex-col justify-center items-center text-center max-w-7xl overflow-x-hidden sm:overflow-visible'>
           <BackgroundCircles />
           <Image
@@ -29,10 +29,11 @@ export default function Home() {
             height={200}
             alt='hero-picture'
             className='rounded-full h-40 w-40 object-cover'
+            priority={true}
           />
 
           <div className='z-10'>
-            <h2 className='text-small uppercase text-gray-700 tracking-[15px] mt-5 px-5'>
+            <h2 className='text-small uppercase text-dark tracking-[15px] mt-5 px-5'>
               Software Engineer
             </h2>
             <h1 className='text-xl md:text-4xl lg:text-5xl font-semibold px-5'>
@@ -43,7 +44,7 @@ export default function Home() {
             <div className='pt-5'>
               <Link
                 href='/resume.pdf'
-                className='px-6 py-2 my-1 hover:border border-[rgb(54,69,79)] rounded-full uppercase text-sm tracking-widest text-gray-700 transition-all hover:text-[#f7ab08]/60'
+                className='px-6 py-2 my-1 hover:border border-darkRings rounded-full uppercase text-sm tracking-widest text-gray-700 transition-all hover:text-highlight/60'
                 target='_blank'
               >
                 Resume
@@ -51,7 +52,7 @@ export default function Home() {
 
               <Link
                 href='mailto:eddiekuo97@gmail.com'
-                className='px-6 py-2 my-1 hover:border hover:border-[rgb(54,69,79)] rounded-full uppercase text-sm tracking-widest text-gray-700 transition-all hover:text-[#f7ab08]/60'
+                className='px-6 py-2 my-1 hover:border hover:border-darkRings rounded-full uppercase text-sm tracking-widest text-gray-700 transition-all hover:text-highlight/60'
               >
                 Contact
               </Link>

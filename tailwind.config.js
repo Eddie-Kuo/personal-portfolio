@@ -6,7 +6,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      rotate: {
+        135: '135deg',
+      },
+    },
     screens: {
       sm: '500px',
       // => @media (min-width: 640px) { ... }
@@ -22,6 +26,14 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+    },
+    colors: {
+      light: '#F5F5F5',
+      dark: '#191919',
+      highlight: '#f7ab08',
+      darkRings: '#333333',
+      blueRings: '#2cdef9',
+      darkBase: '#313638',
     },
   },
   plugins: [],
