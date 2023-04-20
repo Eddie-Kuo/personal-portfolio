@@ -82,21 +82,25 @@ export default function Header() {
           url='https://www.linkedin.com/in/eddie-kuo17/'
           fgColor='#424242'
           bgColor='transparent'
+          target='_blank'
         />
         <SocialIcon
           url='https://github.com/Eddie-Kuo'
           fgColor='#424242'
           bgColor='transparent'
+          target='_blank'
         />
         <SocialIcon
           url='https://www.instagram.com/the_eddiekuo/'
           fgColor='#424242'
           bgColor='transparent'
+          target='_blank'
         />
         <SocialIcon
           url='https://www.facebook.com/eddie.kuo.520/'
           fgColor='#424242'
           bgColor='transparent'
+          target='_blank'
         />
         <span className='w-8 h-8 bg-black rounded-full self-center'></span>
       </motion.div>
@@ -139,21 +143,25 @@ export default function Header() {
               url='https://www.linkedin.com/in/eddie-kuo17/'
               fgColor='#424242'
               bgColor='transparent'
+              target='_blank'
             />
             <SocialIcon
               url='https://github.com/Eddie-Kuo'
               fgColor='#424242'
               bgColor='transparent'
+              target='_blank'
             />
             <SocialIcon
               url='https://www.instagram.com/the_eddiekuo/'
               fgColor='#424242'
               bgColor='transparent'
+              target='_blank'
             />
             <SocialIcon
               url='https://www.facebook.com/eddie.kuo.520/'
               fgColor='#424242'
               bgColor='transparent'
+              target='_blank'
             />
           </nav>
         </motion.div>
