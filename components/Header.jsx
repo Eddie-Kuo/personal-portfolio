@@ -2,10 +2,7 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import CustomLink from './CustomLink';
-
-//* next feature - clicking on a nav link in the popup menu
-//* needs to close the menu when redirecting to new page
-//* then implement DARK MODEEE
+import PopupNavLink from './PopupNavLink';
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -13,7 +10,6 @@ export default function Header() {
   function handleClick() {
     setIsOpen(!isOpen);
   }
-  console.log(isOpen);
 
   return (
     <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto'>
@@ -109,7 +105,8 @@ export default function Header() {
         <motion.div
           initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
-          className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed z-30 bg-slate-500/90 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300'
+          transition={{ duration: 0.01 }}
+          className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed z-30 bg-[#868686]/80 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300'
         >
           <button
             className='hidden lg:flex flex-col justify-center items-center fixed top-0 left-0 p-10'
@@ -120,17 +117,17 @@ export default function Header() {
           </button>
 
           <nav className='flex flex-col sm:flex-row justify-center items-center pt-24 px-36'>
-            <CustomLink
+            <PopupNavLink
               href='/'
               title='Home'
               className='sm:mr-6 text-[#161616]'
             />
-            <CustomLink
+            <PopupNavLink
               href='/about'
               title='About'
               className='sm:mx-6 text-[#161616]'
             />
-            <CustomLink
+            <PopupNavLink
               href='/projects'
               title='Projects'
               className='sm:ml-6 text-[#161616]'

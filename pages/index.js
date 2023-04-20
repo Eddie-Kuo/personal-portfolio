@@ -20,8 +20,8 @@ export default function Home() {
       <Head>
         <title>Eddie Kuo | Home</title>
       </Head>
-      <main>
-        <div className='h-screen flex flex-col justify-center items-center text-center overflow-x-hidden'>
+      <main className='flex justify-center items-center'>
+        <div className='h-screen flex flex-col justify-center items-center text-center max-w-7xl overflow-x-hidden sm:overflow-visible'>
           <BackgroundCircles />
           <Image
             src='https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/IMG_1218%202.JPG'
