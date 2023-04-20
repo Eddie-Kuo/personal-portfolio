@@ -3,9 +3,9 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import CustomLink from './CustomLink';
 
-//*responsiveness of home page + header into side menu
-//* need better adaptability for small-medium screens
-//* make sure that the circles stay in main and not go into the header
+//* next feature - clicking on a nav link in the popup menu
+//* needs to close the menu when redirecting to new page
+//* then implement DARK MODEEE
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -111,6 +111,14 @@ export default function Header() {
           animate={{ scale: 1, opacity: 1 }}
           className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed z-30 bg-slate-500/90 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300'
         >
+          <button
+            className='hidden lg:flex flex-col justify-center items-center fixed top-0 left-0 p-10'
+            onClick={handleClick}
+          >
+            <span className='bg-[#161616] w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
+            <span className='bg-[#161616] w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
+          </button>
+
           <nav className='flex flex-col sm:flex-row justify-center items-center pt-24 px-36'>
             <CustomLink
               href='/'
