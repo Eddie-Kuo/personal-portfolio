@@ -31,7 +31,7 @@ export default function Home() {
             className='rounded-full h-40 w-40 object-cover'
           />
 
-          <div className='z-20'>
+          <div className='z-5'>
             <h2 className='text-small uppercase text-gray-700 tracking-[15px] mt-5 px-5'>
               Software Engineer
             </h2>

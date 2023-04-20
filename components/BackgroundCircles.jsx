@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export default function BackgroundCircles({ className = '' }) {
+export default function BackgroundCircles() {
   return (
     <motion.div
       className='relative flex justify-center items-center mt-20'

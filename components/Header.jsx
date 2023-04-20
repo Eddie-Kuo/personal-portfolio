@@ -16,9 +16,9 @@ export default function Header() {
   console.log(isOpen);
 
   return (
-    <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto z-0'>
+    <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto'>
       <button
-        className='md:hidden flex flex-col justify-center items-center'
+        className='lg:hidden flex flex-col justify-center items-center mt-6 -ml-4 sm:mt-0 sm:ml-0 z-40'
         onClick={handleClick}
       >
         <span
@@ -39,7 +39,7 @@ export default function Header() {
       </button>
 
       <motion.div
-        className='hidden md:flex mr-10'
+        className='hidden lg:flex mr-10'
         initial={{
           x: -500,
           opacity: 0,
@@ -67,7 +67,7 @@ export default function Header() {
         />
       </motion.div>
       <motion.div
-        className='hidden md:flex space-x-5'
+        className='hidden lg:flex space-x-5'
         initial={{
           x: 500,
           opacity: 0,
@@ -104,6 +104,55 @@ export default function Header() {
         />
         <span className='w-8 h-8 bg-black rounded-full self-center'></span>
       </motion.div>
+
+      {isOpen ? (
+        <motion.div
+          initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
+          animate={{ scale: 1, opacity: 1 }}
+          className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed z-30 bg-slate-500/90 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300'
+        >
+          <nav className='flex flex-col sm:flex-row justify-center items-center pt-24 px-36'>
+            <CustomLink
+              href='/'
+              title='Home'
+              className='sm:mr-6 text-[#161616]'
+            />
+            <CustomLink
+              href='/about'
+              title='About'
+              className='sm:mx-6 text-[#161616]'
+            />
+            <CustomLink
+              href='/projects'
+              title='Projects'
+              className='sm:ml-6 text-[#161616]'
+            />
+          </nav>
+
+          <nav className='mt-10 pb-24 px-8 flex justify-center items-center'>
+            <SocialIcon
+              url='https://www.linkedin.com/in/eddie-kuo17/'
+              fgColor='#424242'
+              bgColor='transparent'
+            />
+            <SocialIcon
+              url='https://github.com/Eddie-Kuo'
+              fgColor='#424242'
+              bgColor='transparent'
+            />
+            <SocialIcon
+              url='https://www.instagram.com/the_eddiekuo/'
+              fgColor='#424242'
+              bgColor='transparent'
+            />
+            <SocialIcon
+              url='https://www.facebook.com/eddie.kuo.520/'
+              fgColor='#424242'
+              bgColor='transparent'
+            />
+          </nav>
+        </motion.div>
+      ) : null}
     </header>
   );
 }
