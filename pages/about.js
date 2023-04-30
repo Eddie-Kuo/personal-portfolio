@@ -21,7 +21,10 @@ export default function about() {
             About Me
           </motion.h3>
           <div className='flex flex-col md:flex-row items-center gap-10 w-full p-3 max-w-6xl sm:mt-5'>
-            <Image
+            <motion.img
+              initial={{ x: -200, opacity: 0.5 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1.5 }}
               src='https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/FBD69CB0-F50D-4F79-AFCE-DEB49D9309ED_1_201_a.jpeg'
               alt='profile-picture'
               width={400}
