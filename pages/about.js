@@ -8,7 +8,10 @@ import Skill from '../components/Skill';
 
 export default function about() {
   const topSkillsList = skills.map((skill) => (
-    <Skill key={skill.id} name={skill.name} />
+    <Skill key={skill.id} name={skill.name} image={skill.link} />
+  ));
+  const bottomSkillsList = skillSetTwo.map((skill) => (
+    <Skill key={skill.id} name={skill.name} image={skill.link} />
   ));
 
   return (
@@ -62,8 +65,11 @@ export default function about() {
           >
             Tech Stack
           </motion.h3>
-          <div className='flex flex-col items-center w-full p-3 max-w-7xl sm:mt-5'>
-            <div>{topSkillsList}</div>
+          <div className='flex flex-col items-center w-full py-3 max-w-7xl sm:mt-5'>
+            <div className='grid grid-cols-4 gap-2'>{topSkillsList}</div>
+          </div>
+          <div className='flex flex-col items-center w-full max-w-7xl'>
+            <div className='grid grid-cols-4 gap-2'>{bottomSkillsList}</div>
           </div>
           {/* <h3 className='uppercase tracking-[20px] text 2xl font-bold'>
             Education
