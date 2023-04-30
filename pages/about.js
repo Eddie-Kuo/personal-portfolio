@@ -21,6 +21,7 @@ export default function about() {
       </Head>
       <main className='flex flex-col items-center sm:pt-10 bg-light'>
         <div className='max-w-7xl p-5'>
+          {/* ABOUT ME */}
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -57,6 +58,8 @@ export default function about() {
               simplify people's lives one line of code at a time.
             </motion.div>
           </div>
+
+          {/* TECH STACK */}
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
