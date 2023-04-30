@@ -1,16 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
-import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
+import skills from '../components/utils/skills';
+import skillSetTwo from '../components/utils/skillSetTwo';
+import Skill from '../components/Skill';
 
 export default function about() {
+  const topSkillsList = skills.map((skill) => (
+    <Skill key={skill.id} name={skill.name} />
+  ));
+
   return (
     <>
       <Head>
         <title>Eddie Kuo | About</title>
       </Head>
-      <main className='h-screen flex flex-col items-center sm:pt-10 bg-light'>
+      <main className='flex flex-col items-center sm:pt-10 bg-light'>
         <div className='max-w-7xl p-5'>
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
@@ -56,6 +62,9 @@ export default function about() {
           >
             Tech Stack
           </motion.h3>
+          <div className='flex flex-col items-center w-full p-3 max-w-7xl sm:mt-5'>
+            <div>{topSkillsList}</div>
+          </div>
           {/* <h3 className='uppercase tracking-[20px] text 2xl font-bold'>
             Education
           </h3>
