@@ -20,26 +20,26 @@ export default function about() {
         <title>Eddie Kuo | About</title>
       </Head>
       <main className='flex flex-col items-center bg-light'>
-        <div className='max-w-7xl p-5'>
+        <div className='max-w-7xl p-5 w-full'>
           {/* ABOUT ME */}
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className='uppercase tracking-[20px] text-xl font-bold text-center my-10'
+            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16'
           >
             About Me
           </motion.h3>
-          <div className='flex flex-col md:flex-row items-center gap-10 w-full p-3 max-w-6xl'>
+          <div className='flex flex-col md:flex-row items-center gap-10 w-full p-3'>
             <motion.img
               initial={{ x: -200, opacity: 0.5 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1.5 }}
               src='https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/FBD69CB0-F50D-4F79-AFCE-DEB49D9309ED_1_201_a.jpeg'
               alt='profile-picture'
-              width={400}
-              height={500}
-              className='w-60 h-60 rounded-full md:w-[350px] md:h-[450px] md:rounded-lg lg:w-[500px] lg:h-[600px]'
+              width={350}
+              height={450}
+              className='w-60 h-60 rounded-full md:w-[350px] md:h-[400px] md:rounded-lg lg:w-[500px] lg:h-[600px]'
             />
             <motion.div
               initial={{ x: 200, opacity: 0 }}
@@ -65,11 +65,11 @@ export default function about() {
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className='uppercase tracking-[20px] text-xl font-bold text-center my-10'
+            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16'
           >
             Tech Stack
           </motion.h3>
-          <div className='flex flex-col items-center w-full py-3 max-w-7xl'>
+          <div className='flex flex-col items-center w-full py-3  max-w-7xl'>
             <div className='grid grid-cols-4 gap-2'>{topSkillsList}</div>
           </div>
           <div className='flex flex-col items-center w-full max-w-7xl pb-3'>
@@ -77,10 +77,18 @@ export default function about() {
           </div>
           {/* <h3 className='uppercase tracking-[20px] text 2xl font-bold'>
             Education
-          </h3>
-          <h3 className='uppercase tracking-[20px] text 2xl font-bold'>
-            Reviews (Recommendations)
           </h3> */}
+          <motion.h3
+            initial={{ y: -50, opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16'
+          >
+            Reviews
+          </motion.h3>
+          <div className='flex flex-col items-center py-3'>
+            <p></p>
+          </div>
         </div>
       </main>
     </>
