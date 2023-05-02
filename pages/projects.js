@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import React from 'react';
 import { motion } from 'framer-motion';
+import ProjectCard from '../components/ProjectCard';
 
 export default function Projects() {
   return (
@@ -19,6 +20,9 @@ export default function Projects() {
           >
             Some Things I've Built
           </motion.h3>
+          <div className='flex flex-col items-center'>
+            <ProjectCard />
+          </div>
         </div>
       </main>
     </>
