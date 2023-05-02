@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function ProjectImage({ className = '' }) {
   return (
-    <a>
+    <a className='cursor-pointer z-10'>
       <Image
         src={
           'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/pexels-pixabay-160846.jpg'
