@@ -6,6 +6,7 @@ const nextConfig = {
       'ozkuzfbdevqwhsqwknht.supabase.co',
       'cdn.sanity.io',
       'img.icons8.com',
+      'user-images.githubusercontent.com',
     ],
   },
 };

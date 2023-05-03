@@ -3,6 +3,8 @@ import Head from 'next/head';
 import React from 'react';
 import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
+import ProjectCardTwo from '../components/ProjectCardTwo';
+import ProjectCardThree from '../components/ProjectCardThree';
 
 export default function Projects() {
   return (
@@ -22,6 +24,8 @@ export default function Projects() {
           </motion.h3>
           <div className='flex flex-col items-center'>
             <ProjectCard />
+            <ProjectCardTwo />
+            <ProjectCardThree />
           </div>
         </div>
       </main>
