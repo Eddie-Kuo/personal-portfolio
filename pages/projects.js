@@ -48,7 +48,7 @@ export default function Projects() {
           >
             Other Notable Projects
           </motion.h3>
-          <div className='flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5'>
+          <div className='flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-32'>
             {notableProjects}
           </div>
         </div>

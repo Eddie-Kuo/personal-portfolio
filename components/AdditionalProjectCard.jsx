@@ -24,17 +24,26 @@ export default function AdditionalProjectCard({
         <div className='flex flex-row justify-between w-full'>
           <AiOutlineFolderOpen size={30} color='grey' />
           <div className='flex flex-row gap-2'>
-            <a href={githubLink} target='_blank'>
-              <AiOutlineGithub size={30} color='grey' />
-            </a>
-            <a href={deployedLink} target='_blank'>
-              <BiExit size={30} color='grey' />
-            </a>
+            {githubLink ? (
+              <a href={githubLink} target='_blank'>
+                <AiOutlineGithub size={30} color='grey' />
+              </a>
+            ) : (
+              ''
+            )}
+
+            {deployedLink ? (
+              <a href={deployedLink} target='_blank'>
+                <BiExit size={30} color='grey' />
+              </a>
+            ) : (
+              ''
+            )}
           </div>
         </div>
-        <h3 className='pt-4 pb-1 font-serif font-bold'>{name}</h3>
-        <p className='text-start font-serif'>{description}</p>
-        <ul className='flex flex-row items-start gap-2 pt-8'>{techStack}</ul>
+        <h3 className='my-2 font-serif font-bold h-[20%]'>{name}</h3>
+        <p className='text-start font-serif h-[50%]'>{description}</p>
+        <ul className='flex flex-row items-start gap-2 mt-8'>{techStack}</ul>
       </a>
     </>
   );
