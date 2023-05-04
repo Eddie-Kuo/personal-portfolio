@@ -20,13 +20,13 @@ export default function ProjectCardThree() {
 
         <div className='absolute rounded-lg bg-dark/75 top-0 bottom-0 right-0 left-0 flex flex-col items-start justify-center md:hidden z-10 px-8 gap-0.5'>
           <a className='text-blueRings font-serif text-sm'>Featured Project</a>
-          <a className='text-highlight font-serif text-lg'>Collabo</a>
+          <a className='text-highlight font-serif text-xl'>Collabo</a>
           <p className='text-light font-serif text-sm py-5'>
             Create music with collaborators around the world with our open
             source song project platform. Collabo was created to aid musicians
-            from around the world over come collaboration hurdles when it comes
-            to living in different cities. Users can contribute to open source
-            projects with a similar style to Github.
+            from around the world to overcome collaboration hurdles when it
+            comes to living in different cities. Users can contribute to open
+            source projects with a similar style to Github.
           </p>
           <ul className='flex flex-row gap-2 text-[#b0b0b0] font-serif text-sm'>
             <li>HTML</li>

@@ -22,7 +22,8 @@ export default function ProjectCardTwo() {
             Create your own palette of sound with this interactive 3D music app.
             Users can select from a variety of instrument sounds and render
             colors on key press that turn into gradients when multiple keys are
-            pressed together on the virtual piano keyboard.
+            pressed together on the virtual keyboard, creating a mesmerizing
+            experience.
           </p>
           <ul className='flex flex-row gap-2 justify-start z-10 font-serif text-md pt-3'>
             <li>React</li>
@@ -44,7 +45,7 @@ export default function ProjectCardTwo() {
 
         <div className='absolute rounded-lg bg-dark/75 top-0 bottom-0 right-0 left-0 flex flex-col items-start justify-center md:hidden z-10 px-8 gap-0.5'>
           <a className='text-blueRings font-serif text-sm'>Featured Project</a>
-          <a className='text-highlight font-serif text-lg'>Sound Palette</a>
+          <a className='text-highlight font-serif text-xl'>Sound Palette</a>
           <p className='text-light font-serif text-sm py-5'>
             Create your own palette of sound with this interactive 3D music app.
             Users can select from a variety of instrument sounds and render

@@ -10,6 +10,7 @@ export default function ProjectImage({ className = '', image }) {
         width={400}
         alt='dog placeholder'
         className={className}
+        priority={true}
       />
     </a>
   );
