@@ -20,7 +20,7 @@ export default function About() {
         <title>Eddie Kuo | About</title>
       </Head>
       <main className='flex flex-col items-center bg-light'>
-        <div className='max-w-7xl p-10 w-full'>
+        <div className='max-w-7xl py-10 px-5 w-full'>
           {/* ABOUT ME */}
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
@@ -64,6 +64,7 @@ export default function About() {
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 1.5 }}
             className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16'
           >

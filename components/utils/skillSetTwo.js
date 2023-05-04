@@ -26,7 +26,7 @@ const skillSetTwo = [
   },
   {
     id: 6,
-    name: 'TailwindCSS',
+    name: 'TailwindCss',
     link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/tailwaindCSS-icon.png',
   },
   {

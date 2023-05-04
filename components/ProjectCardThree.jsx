@@ -9,6 +9,7 @@ export default function ProjectCardThree() {
       <motion.div
         initial={{ y: 50, opacity: 0.75 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
         className='relative flex md:flex-row md:justify-between justify-center w-full h-96 items-center max-w-5xl mt-5 lg:mt-10'
       >

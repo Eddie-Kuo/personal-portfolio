@@ -13,6 +13,8 @@ export default function Skill({ image, name }) {
         duration: 1.5,
       }}
       whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className='flex flex-col items-center justify-center'
     >
       <Image
         src={image}

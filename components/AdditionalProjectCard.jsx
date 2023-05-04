@@ -26,6 +26,7 @@ export default function AdditionalProjectCard({
     <motion.div
       initial={{ y: 30, opacity: 0.5 }}
       whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
       transition={{ duration: 1.5 }}
     >
       <div
