@@ -135,16 +135,23 @@ export default function Header() {
           </button>
 
           <nav className='flex flex-col sm:flex-row justify-center items-center pt-24 px-36'>
-            <PopupNavLink href='/' title='Home' className='sm:mr-6 text-dark' />
+            <PopupNavLink
+              href='/'
+              title='Home'
+              className='sm:mr-6 text-dark'
+              onClick={handleClick}
+            />
             <PopupNavLink
               href='/about'
               title='About'
               className='sm:mx-6 text-dark'
+              onClick={handleClick}
             />
             <PopupNavLink
               href='/projects'
               title='Projects'
               className='sm:ml-6 text-dark'
+              onClick={handleClick}
             />
           </nav>
 

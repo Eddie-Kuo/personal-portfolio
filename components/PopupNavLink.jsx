@@ -1,10 +1,15 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-export default function CustomLink({ href, title, className = '' }) {
+export default function CustomLink({ href, title, className = '', onClick }) {
   const router = useRouter();
   return (
-    <a href={href} className={`${className} relative group`}>
+    <Link
+      href={href}
+      className={`${className} relative group`}
+      onClick={onClick}
+    >
       {title}
 
       <span
@@ -13,6 +18,6 @@ export default function CustomLink({ href, title, className = '' }) {
       >
         &nbsp;
       </span>
-    </a>
+    </Link>
   );
 }
