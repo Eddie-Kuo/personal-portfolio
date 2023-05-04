@@ -31,7 +31,7 @@ export default function Projects() {
             animate={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5 }}
-            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:mb-24 sm:mt-16 text-darkText dark:text-light'
+            className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:mb-24 sm:mt-16 text-darkText dark:text-light'
           >
             Some Things I've Built
           </motion.h3>
@@ -46,7 +46,7 @@ export default function Projects() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5 }}
-            className='tracking-[20px] text-xl font-bold text-center my-10 sm:my-24 text-darkText dark:text-light'
+            className='tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-10 sm:my-24 text-darkText dark:text-light'
           >
             Other Notable Projects
           </motion.h3>

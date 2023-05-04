@@ -26,7 +26,7 @@ export default function About() {
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
+            className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             About Me
           </motion.h3>
@@ -66,7 +66,7 @@ export default function About() {
             animate={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5 }}
-            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
+            className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             Tech Stack
           </motion.h3>

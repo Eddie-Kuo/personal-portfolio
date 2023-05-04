@@ -11,6 +11,7 @@ export default function Home() {
       'Hi, My Name is Eddie Kuo',
       'Guy-who-loves-working-out.jsx',
       '<ButLovesToCodeMore />',
+      'Contact for Collabs!',
     ],
     loop: true,
     delaySpeed: 2000,
@@ -33,7 +34,7 @@ export default function Home() {
           />
 
           <div className='z-10'>
-            <h2 className='text-small uppercase text-darkText dark:text-highlight tracking-[15px] mt-5 px-5'>
+            <h2 className='uppercase text-darkText dark:text-highlight tracking-[15px] mt-5 px-5'>
               Software Engineer
             </h2>
             <h1 className='text-xl md:text-4xl lg:text-5xl font-semibold px-5'>

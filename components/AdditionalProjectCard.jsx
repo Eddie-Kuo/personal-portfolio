@@ -31,7 +31,7 @@ export default function AdditionalProjectCard({
     >
       <div
         onClick={handleClick}
-        className='flex flex-col border border-dark bg-darkBase/30 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/60 cursor-pointer h-full dark:bg-light/70'
+        className='flex flex-col border border-dark bg-darkBase/30 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/60 cursor-pointer h-full dark:bg-light/70 dark:hover:bg-highlight/90'
       >
         <div className='flex flex-row justify-between w-full'>
           <AiOutlineFolderOpen size={30} color='grey' />

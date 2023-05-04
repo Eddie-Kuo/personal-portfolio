@@ -124,33 +124,33 @@ export default function Header() {
           initial={{ scale: 0, opacity: 0.75, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.01 }}
-          className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed bg-[#bababa]/80 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300 z-50'
+          className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed bg-[#bababa]/80 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300 z-50 dark:bg-dark/70'
         >
           <button
             className='hidden lg:flex flex-col justify-center items-center fixed top-0 left-0 p-10'
             onClick={handleClick}
           >
-            <span className='bg-dark w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
-            <span className='bg-dark w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
+            <span className='bg-dark dark:bg-light w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
+            <span className='bg-dark dark:bg-light w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
           </button>
 
           <nav className='flex flex-col sm:flex-row justify-center items-center pt-24 px-36'>
             <PopupNavLink
               href='/'
               title='Home'
-              className='sm:mr-6 text-dark'
+              className='sm:mr-6 text-dark dark:text-light/90'
               onClick={handleClick}
             />
             <PopupNavLink
               href='/about'
               title='About'
-              className='sm:mx-6 text-dark'
+              className='sm:mx-6 text-dark dark:text-light/90'
               onClick={handleClick}
             />
             <PopupNavLink
               href='/projects'
               title='Projects'
-              className='sm:ml-6 text-dark'
+              className='sm:ml-6 text-dark dark:text-light/90'
               onClick={handleClick}
             />
           </nav>
@@ -158,28 +158,38 @@ export default function Header() {
           <nav className='mt-10 pb-24 px-8 flex justify-center items-center'>
             <SocialIcon
               url='https://www.linkedin.com/in/eddie-kuo17/'
-              fgColor='#424242'
+              fgColor={mode === 'dark' ? 'white' : '#424242'}
               bgColor='transparent'
               target='_blank'
             />
             <SocialIcon
               url='https://github.com/Eddie-Kuo'
-              fgColor='#424242'
+              fgColor={mode === 'dark' ? 'white' : '#424242'}
               bgColor='transparent'
               target='_blank'
             />
             <SocialIcon
               url='https://www.instagram.com/the_eddiekuo/'
-              fgColor='#424242'
+              fgColor={mode === 'dark' ? 'white' : '#424242'}
               bgColor='transparent'
               target='_blank'
             />
             <SocialIcon
               url='https://www.facebook.com/eddie.kuo.520/'
-              fgColor='#424242'
+              fgColor={mode === 'dark' ? 'white' : '#424242'}
               bgColor='transparent'
               target='_blank'
             />
+            <button
+              onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+              className='ml-1'
+            >
+              {mode === 'dark' ? (
+                <BiSun size={30} className='text-light/80' />
+              ) : (
+                <BiMoon size={30} className='text-dark/80' />
+              )}
+            </button>
           </nav>
         </motion.div>
       ) : null}
