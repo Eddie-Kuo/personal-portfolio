@@ -2,7 +2,7 @@ const additionalProjects = [
   {
     id: 1,
     name: 'Intergalactic Space Escape',
-    description: `An interactive escape room style game to be played right inside your terminal. Using arrow to navigate through each room with prompts and actions, it'sup to you to find your way out`,
+    description: `An interactive escape room style game to be played right inside your terminal. Using arrow to navigate through each room with prompts and actions, it's up to you to find your way out.`,
     githubLink: 'https://github.com/Eddie-Kuo/intergalactic-space-escape',
     tech: ['NodeJs', 'Express', 'Supertest'],
   },
@@ -10,7 +10,7 @@ const additionalProjects = [
     id: 2,
     name: 'Noughts and Crosses',
     description:
-      'A two player tic tac toe game built with React and deployed through Netlify. A simple yet complex game to build which is perfect practice for managing state i think this needs to be',
+      'A two player tic tac toe game built with React and deployed through Netlify. A simple yet complex game to build which is perfect practice for managing state.',
     githubLink: 'https://github.com/Eddie-Kuo/tic-tac-toe-react-fs-6',
     deployedLink: 'https://zingy-chebakia-639cac.netlify.app/',
     tech: ['React', 'Netlify'],
