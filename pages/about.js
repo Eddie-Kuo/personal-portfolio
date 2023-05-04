@@ -72,7 +72,7 @@ export default function About() {
           <div className='flex flex-col items-center w-full py-3  max-w-7xl'>
             <div className='grid grid-cols-4 gap-2'>{topSkillsList}</div>
           </div>
-          <div className='flex flex-col items-center w-full max-w-7xl pb-3'>
+          <div className='flex flex-col items-center w-full max-w-7xl pb-3 mb-32'>
             <div className='grid grid-cols-4 gap-2'>{bottomSkillsList}</div>
           </div>
           {/* <h3 className='uppercase tracking-[20px] text 2xl font-bold'>
