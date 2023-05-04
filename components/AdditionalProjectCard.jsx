@@ -2,7 +2,18 @@ import React from 'react';
 import { AiOutlineFolderOpen, AiOutlineGithub } from 'react-icons/ai';
 import { BiExit } from 'react-icons/bi';
 
-export default function AdditionalProjectCard({ deployedLink, githubLink }) {
+export default function AdditionalProjectCard({
+  deployedLink,
+  githubLink,
+  name,
+  description,
+  tech,
+}) {
+  const techStack = tech.map((entry) => (
+    <li className='font-serif' key={entry}>
+      {entry}
+    </li>
+  ));
   return (
     <>
       <a
@@ -21,18 +32,9 @@ export default function AdditionalProjectCard({ deployedLink, githubLink }) {
             </a>
           </div>
         </div>
-        <p className='pt-4 text-start'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
-          perferendis beatae esse odio saepe sit tenetur provident sint expedita
-          placeat totam aspernatur numquam, corrupti nobis repellat enim.
-          Libero, eum dignissimos!
-        </p>
-        <ul className='flex flex-row items-start gap-2 pt-8'>
-          <li>Tech</li>
-          <li>Tech</li>
-          <li>Tech</li>
-          <li>Tech</li>
-        </ul>
+        <h3 className='pt-4 pb-1 font-serif font-bold'>{name}</h3>
+        <p className='text-start font-serif'>{description}</p>
+        <ul className='flex flex-row items-start gap-2 pt-8'>{techStack}</ul>
       </a>
     </>
   );

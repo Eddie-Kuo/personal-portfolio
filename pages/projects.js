@@ -6,8 +6,19 @@ import ProjectCard from '../components/ProjectCard';
 import ProjectCardTwo from '../components/ProjectCardTwo';
 import ProjectCardThree from '../components/ProjectCardThree';
 import AdditionalProjectCard from '../components/AdditionalProjectCard';
+import { additionalProjects } from '../components/utils/additionalProjects';
 
 export default function Projects() {
+  const notableProjects = additionalProjects.map((project) => (
+    <AdditionalProjectCard
+      key={project.id}
+      name={project.name}
+      description={project.description}
+      githubLink={project.githubLink}
+      deployedLink={project.deployedLink}
+      tech={project.tech}
+    />
+  ));
   return (
     <>
       <Head>
@@ -38,12 +49,7 @@ export default function Projects() {
             Other Notable Projects
           </motion.h3>
           <div className='flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5'>
-            <AdditionalProjectCard />
-            <AdditionalProjectCard />
-            <AdditionalProjectCard />
-            <AdditionalProjectCard />
-            <AdditionalProjectCard />
-            <AdditionalProjectCard />
+            {notableProjects}
           </div>
         </div>
       </main>
