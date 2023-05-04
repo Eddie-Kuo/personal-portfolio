@@ -47,19 +47,21 @@ export default function ProjectCardThree() {
           </ul>
         </div>
 
-        <div className='hidden md:flex flex-col text-end justify-center absolute right-0 top-0 bottom-0 max-w-[70%]'>
-          <h5 className='font-serif text-sm font-bold pb-3'>
+        <div className='hidden md:flex flex-col text-end justify-center absolute right-0 top-0 bottom-0 max-w-[50%]'>
+          <h5 className='font-serif text-sm font-bold pb-3 text-darkText dark:text-light/70'>
             Featured Project
           </h5>
-          <h3 className='z-10 font-serif text-2xl font-bold pb-3'>Collabo</h3>
-          <p className='z-10 rounded-md bg-dark/80 font-serif text-light pl-1 pr-3 py-2'>
+          <h3 className='z-10 font-serif text-2xl font-bold pb-3 text-darkText dark:text-light'>
+            Collabo
+          </h3>
+          <p className='z-10 rounded-md bg-dark/80  font-serif text-light pl-1 pr-3 py-2 dark:bg-textBgLight/90 dark:text-darkText'>
             Create music with collaborators around the world with our open
             source song project platform. Collabo was created to aid musicians
             from around the world over come collaboration hurdles when it comes
             to living in different cities. Users can contribute to open source
             projects with a similar style to Github.
           </p>
-          <ul className='flex flex-row gap-2 justify-end z-10 font-serif text-md pt-3'>
+          <ul className='flex flex-row gap-2 justify-end z-10 font-serif text-md pt-3 dark:text-light/70'>
             <li>HTML</li>
             <li>CSS</li>
             <li>Javascript</li>
@@ -67,10 +69,10 @@ export default function ProjectCardThree() {
           </ul>
           <ul className='flex flex-row gap-2 justify-end font-serif text-md pt-3'>
             <a href='https://github.com/Collabo-Team/collabo' target='_blank'>
-              <AiOutlineGithub size={30} />
+              <AiOutlineGithub size={30} className='dark:text-light/100' />
             </a>
             <a href='https://collabomusic.co/' target='_blank'>
-              <AiOutlineLink size={30} />
+              <AiOutlineLink size={30} className='dark:text-light/100' />
             </a>
           </ul>
         </div>

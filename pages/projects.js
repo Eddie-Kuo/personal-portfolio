@@ -24,14 +24,14 @@ export default function Projects() {
       <Head>
         <title>Eddie Kuo | Projects</title>
       </Head>
-      <main className='flex flex-col items-center bg-light'>
+      <main className='flex flex-col items-center bg-light dark:bg-dark'>
         <div className='max-w-7xl py-10 px-6 w-full'>
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5 }}
-            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:mb-24 sm:mt-16'
+            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:mb-24 sm:mt-16 text-darkText dark:text-light'
           >
             Some Things I've Built
           </motion.h3>
@@ -46,7 +46,7 @@ export default function Projects() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5 }}
-            className='tracking-[20px] text-xl font-bold text-center my-10 sm:my-24'
+            className='tracking-[20px] text-xl font-bold text-center my-10 sm:my-24 text-darkText dark:text-light'
           >
             Other Notable Projects
           </motion.h3>

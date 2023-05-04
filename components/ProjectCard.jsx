@@ -47,19 +47,21 @@ export default function ProjectCard() {
           </ul>
         </div>
 
-        <div className='hidden md:flex flex-col text-end justify-center absolute right-0 top-0 bottom-0 max-w-[70%]'>
-          <h5 className='font-serif text-sm font-bold pb-3'>
+        <div className='hidden md:flex flex-col text-end justify-center absolute right-0 top-0 bottom-0 max-w-[50%]'>
+          <h5 className='font-serif text-sm font-bold pb-3 text-darkText dark:text-light/70'>
             Featured Project
           </h5>
-          <h3 className='z-10 font-serif text-2xl font-bold pb-3'>Ciao!</h3>
-          <p className='z-10 rounded-md bg-dark/80 font-serif text-light pl-1 pr-3 py-2'>
+          <h3 className='z-10 font-serif text-2xl font-bold pb-3 text-darkText dark:text-light'>
+            Ciao!
+          </h3>
+          <p className='z-10 rounded-md bg-dark/80 dark:bg-textBgLight/90 font-serif text-light dark:text-darkText pl-1 pr-3 py-2'>
             Ciao is a mobile app developed with React Native to solve the issue
             of recommendations getting lost in past conversations. The main
             purpose of Ciao is to be able to document your favorite places by
             city for your friends to view and visit, sharing your memorable
             experiences with the people you care about most.
           </p>
-          <ul className='flex flex-row gap-2 justify-end z-10 font-serif text-md pt-3'>
+          <ul className='flex flex-row gap-2 justify-end z-10 font-serif text-md pt-3 dark:text-light/70'>
             <li>React-Native</li>
             <li>NodeJs</li>
             <li>SQL</li>
@@ -70,7 +72,7 @@ export default function ProjectCard() {
               href='https://github.com/Ciao-App/ciao-frontend-mobile'
               target='_blank'
             >
-              <AiOutlineGithub size={30} />
+              <AiOutlineGithub size={30} className='dark:text-light/100' />
             </a>
           </ul>
         </div>

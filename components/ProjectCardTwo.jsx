@@ -13,21 +13,21 @@ export default function ProjectCardTwo() {
         transition={{ duration: 1 }}
         className='relative flex md:flex-row md:justify-between justify-center w-full h-96 items-center max-w-5xl mt-5'
       >
-        <div className='hidden md:flex flex-col text-start justify-center max-w-[70%] '>
-          <h5 className='font-serif text-sm font-bold pb-3'>
+        <div className='hidden md:flex flex-col text-start justify-center max-w-[50%]'>
+          <h5 className='font-serif text-sm font-bold pb-3 dark:text-light/70'>
             Featured Project
           </h5>
-          <h3 className='z-10 font-serif text-2xl font-bold pb-3'>
+          <h3 className='z-10 font-serif text-2xl font-bold pb-3 dark:text-light'>
             Sound Palette
           </h3>
-          <p className='z-20 rounded-md bg-dark/80 font-serif text-light pl-3 pr-1 py-2'>
+          <p className='z-20 rounded-md bg-dark/80 dark:bg-textBgLight/90 font-serif text-light dark:text-darkText pl-3 pr-1 py-2'>
             Create your own palette of sound with this interactive 3D music app.
             Users can select from a variety of instrument sounds and render
             colors on key press that turn into gradients when multiple keys are
             pressed together on the virtual keyboard, creating a mesmerizing
             experience.
           </p>
-          <ul className='flex flex-row gap-2 justify-start z-10 font-serif text-md pt-3'>
+          <ul className='flex flex-row gap-2 justify-start z-10 font-serif text-md pt-3 dark:text-light/70'>
             <li>React</li>
             <li>ThreeJs</li>
             <li>React-Piano</li>
@@ -37,10 +37,10 @@ export default function ProjectCardTwo() {
               href='https://github.com/ryanjeffrey/sound-palette'
               target='_blank'
             >
-              <AiOutlineGithub size={30} />
+              <AiOutlineGithub size={30} className='dark:text-light/100' />
             </a>
             <a href='https://sound-palette.netlify.app/' target='_blank'>
-              <AiOutlineLink size={30} />
+              <AiOutlineLink size={30} className='dark:text-light/100' />
             </a>
           </ul>
         </div>
