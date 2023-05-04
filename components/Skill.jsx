@@ -21,9 +21,9 @@ export default function Skill({ image, name }) {
         width={75}
         height={75}
         alt='icon-badge'
-        className='border rounded-full border-dark p-0.5 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32'
+        className='border rounded-full border-darkText dark:border-highlight p-0.5 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32'
       />
-      <h3 className='text-center'>{name}</h3>
+      <h3 className='text-center text-darkText dark:text-light'>{name}</h3>
     </motion.div>
   );
 }

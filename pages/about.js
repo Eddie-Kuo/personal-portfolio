@@ -19,14 +19,14 @@ export default function About() {
       <Head>
         <title>Eddie Kuo | About</title>
       </Head>
-      <main className='flex flex-col items-center bg-light'>
+      <main className='flex flex-col items-center bg-light dark:bg-dark'>
         <div className='max-w-7xl py-10 px-5 w-full'>
           {/* ABOUT ME */}
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16'
+            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             About Me
           </motion.h3>
@@ -45,7 +45,7 @@ export default function About() {
               initial={{ x: 200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1.5 }}
-              className='text-base'
+              className='text-base text-darkText dark:text-light'
             >
               Hi! My name is Eddie and I'm a full-stack software engineer based
               in Austin, Texas. With a specialty in Javascript and experience in
@@ -66,7 +66,7 @@ export default function About() {
             animate={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5 }}
-            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16'
+            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             Tech Stack
           </motion.h3>
