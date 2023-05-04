@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectImage from './ProjectImage';
 import { motion } from 'framer-motion';
+import { AiOutlineGithub, AiOutlineLink } from 'react-icons/ai';
 
 export default function ProjectCardThree() {
   return (
@@ -12,7 +13,8 @@ export default function ProjectCardThree() {
         className='relative flex md:flex-row md:justify-between justify-center w-full h-96 items-center max-w-5xl mt-5 lg:mt-10'
       >
         <ProjectImage
-          className='rounded-lg w-[700px] h-[380px] md:w-[450px] md:h-[300px] lg:w-[550px] lg:h-[400px]'
+          className='rounded-lg w-[700px] h-[380px] md:w-[450px] md:h-[300px] lg:w-[550px] lg:h-[400px] opacity-80 hover:opacity-100'
+          link='https://collabomusic.co/'
           image={
             'https://user-images.githubusercontent.com/73365865/218589174-efd9e3d0-7613-480d-9894-33782eac1cd1.jpg'
           }
@@ -35,8 +37,12 @@ export default function ProjectCardThree() {
             <li>React</li>
           </ul>
           <ul className='flex flex-row gap-2 text-[#b0b0b0] font-serif text-xs'>
-            <li>Github</li>
-            <li>Deployment</li>
+            <a href='https://github.com/Collabo-Team/collabo' target='_blank'>
+              <AiOutlineGithub size={30} />
+            </a>
+            <a href='https://collabomusic.co/' target='_blank'>
+              <AiOutlineLink size={30} />
+            </a>
           </ul>
         </div>
 
@@ -59,8 +65,12 @@ export default function ProjectCardThree() {
             <li>React</li>
           </ul>
           <ul className='flex flex-row gap-2 justify-end font-serif text-md pt-3'>
-            <li>Github</li>
-            <li>Deployment</li>
+            <a href='https://github.com/Collabo-Team/collabo' target='_blank'>
+              <AiOutlineGithub size={30} />
+            </a>
+            <a href='https://collabomusic.co/' target='_blank'>
+              <AiOutlineLink size={30} />
+            </a>
           </ul>
         </div>
       </motion.div>

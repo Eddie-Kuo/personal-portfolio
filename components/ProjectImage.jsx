@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 
-export default function ProjectImage({ className = '', image }) {
+export default function ProjectImage({ className = '', image, link }) {
   return (
-    <a className='cursor-pointer z-10'>
+    <a className='cursor-pointer z-10' href={link} target='_blank'>
       <Image
         src={image}
         height={300}

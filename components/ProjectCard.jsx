@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectImage from './ProjectImage';
 import { motion } from 'framer-motion';
+import { AiOutlineGithub } from 'react-icons/ai';
 
 export default function ProjectCard() {
   return (
@@ -12,7 +13,8 @@ export default function ProjectCard() {
         className='relative flex md:flex-row md:justify-between justify-center w-full h-96 items-center max-w-5xl'
       >
         <ProjectImage
-          className='rounded-lg w-[700px] h-[380px] md:w-[450px] md:h-[300px] lg:w-[550px] lg:h-[400px]'
+          className='rounded-lg w-[700px] h-[380px] md:w-[450px] md:h-[300px] lg:w-[550px] lg:h-[400px] opacity-80 hover:opacity-100'
+          link='https://github.com/Ciao-App/ciao-frontend-mobile'
           image={
             'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/pexels-pixabay-160846.jpg'
           }
@@ -34,9 +36,13 @@ export default function ProjectCard() {
             <li>SQL</li>
             <li>Redux</li>
           </ul>
-          <ul className='flex flex-row gap-2 text-[#b0b0b0] font-serif text-xs'>
-            <li>Github</li>
-            <li>Deployment</li>
+          <ul className='flex flex-row gap-2 text-[#b0b0b0] font-serif text-xs ot-1'>
+            <a
+              href='https://github.com/Ciao-App/ciao-frontend-mobile'
+              target='_blank'
+            >
+              <AiOutlineGithub size={30} />
+            </a>
           </ul>
         </div>
 
@@ -59,8 +65,12 @@ export default function ProjectCard() {
             <li>Redux</li>
           </ul>
           <ul className='flex flex-row gap-2 justify-end font-serif text-md pt-3'>
-            <li>Github</li>
-            <li>Deployment</li>
+            <a
+              href='https://github.com/Ciao-App/ciao-frontend-mobile'
+              target='_blank'
+            >
+              <AiOutlineGithub size={30} />
+            </a>
           </ul>
         </div>
       </motion.div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectImage from './ProjectImage';
 import { motion } from 'framer-motion';
+import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
 
 export default function ProjectCardTwo() {
   return (
@@ -31,13 +32,21 @@ export default function ProjectCardTwo() {
             <li>React-Piano</li>
           </ul>
           <ul className='flex flex-row gap-2 justify-start font-serif text-md pt-3'>
-            <li>Github</li>
-            <li>Deployment</li>
+            <a
+              href='https://github.com/ryanjeffrey/sound-palette'
+              target='_blank'
+            >
+              <AiOutlineGithub size={30} />
+            </a>
+            <a href='https://sound-palette.netlify.app/' target='_blank'>
+              <AiOutlineLink size={30} />
+            </a>
           </ul>
         </div>
 
         <ProjectImage
-          className='rounded-lg w-[700px] h-[380px] md:w-[450px] md:h-[300px] lg:w-[550px] lg:h-[400px] absolute right-0 top-0 bottom-0 md:mt-10 lg:mt-0'
+          className='rounded-lg w-[700px] h-[380px] md:w-[450px] md:h-[300px] lg:w-[550px] lg:h-[400px] absolute right-0 top-0 bottom-0 md:mt-10 lg:mt-0 opacity-80 hover:opacity-100'
+          link='https://sound-palette.netlify.app/'
           image={
             'https://user-images.githubusercontent.com/73365865/218589321-98ceaccf-2dfb-4cdb-8067-1e7ca791acf2.jpg'
           }
@@ -58,8 +67,15 @@ export default function ProjectCardTwo() {
             <li>React-Piano</li>
           </ul>
           <ul className='flex flex-row gap-2 text-[#b0b0b0] font-serif text-xs'>
-            <li>Github</li>
-            <li>Deployment</li>
+            <a
+              href='https://github.com/ryanjeffrey/sound-palette'
+              target='_blank'
+            >
+              <AiOutlineGithub size={30} />
+            </a>
+            <a href='https://sound-palette.netlify.app/' target='_blank'>
+              <AiOutlineLink size={30} />
+            </a>
           </ul>
         </div>
       </motion.div>
