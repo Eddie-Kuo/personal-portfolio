@@ -52,7 +52,7 @@ export default function ProjectCardThree() {
             Featured Project
           </h5>
           <h3 className='z-10 font-serif text-2xl font-bold pb-3'>Collabo</h3>
-          <p className='z-10 bg-dark/80 font-serif text-light pl-1 pr-3 py-2'>
+          <p className='z-10 rounded-md bg-dark/80 font-serif text-light pl-1 pr-3 py-2'>
             Create music with collaborators around the world with our open
             source song project platform. Collabo was created to aid musicians
             from around the world over come collaboration hurdles when it comes

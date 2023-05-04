@@ -52,7 +52,7 @@ export default function ProjectCard() {
             Featured Project
           </h5>
           <h3 className='z-10 font-serif text-2xl font-bold pb-3'>Ciao!</h3>
-          <p className='z-10 bg-dark/80 font-serif text-light pl-1 pr-3 py-2'>
+          <p className='z-10 rounded-md bg-dark/80 font-serif text-light pl-1 pr-3 py-2'>
             Ciao is a mobile app developed with React Native to solve the issue
             of recommendations getting lost in past conversations. The main
             purpose of Ciao is to be able to document your favorite places by

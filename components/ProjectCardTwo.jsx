@@ -20,7 +20,7 @@ export default function ProjectCardTwo() {
           <h3 className='z-10 font-serif text-2xl font-bold pb-3'>
             Sound Palette
           </h3>
-          <p className='z-20 bg-dark/80 font-serif text-light pl-3 pr-1 py-2'>
+          <p className='z-20 rounded-md bg-dark/80 font-serif text-light pl-3 pr-1 py-2'>
             Create your own palette of sound with this interactive 3D music app.
             Users can select from a variety of instrument sounds and render
             colors on key press that turn into gradients when multiple keys are

@@ -5,6 +5,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       rotate: {
@@ -29,7 +30,8 @@ module.exports = {
     },
     colors: {
       light: '#F5F5F5',
-      dark: '#191919',
+      dark: '#2A2D2F',
+      darkText: '#191919',
       highlight: '#f7ab08',
       darkRings: '#333333',
       blueRings: '#2cdef9',
