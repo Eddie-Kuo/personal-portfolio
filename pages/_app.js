@@ -4,7 +4,7 @@ import Header from '../components/Header';
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <main>
+      <main className=''>
         <Header />
         <Component {...pageProps} />
       </main>
