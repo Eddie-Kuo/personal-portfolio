@@ -11,6 +11,10 @@ export default function Header() {
 
   const [mode, setMode] = useThemeSwitcher();
 
+  function toggleTheme() {
+    setMode(mode === 'light' ? 'dark' : 'light');
+  }
+
   function handleClick() {
     setIsOpen(!isOpen);
   }
@@ -110,7 +114,7 @@ export default function Header() {
           bgColor='transparent'
           target='_blank'
         />
-        <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}>
+        <button onClick={toggleTheme}>
           {mode === 'dark' ? (
             <BiSun size={25} className='text-light' />
           ) : (

@@ -19,7 +19,7 @@ export default function About() {
       <Head>
         <title>Eddie Kuo | About</title>
       </Head>
-      <main className='flex flex-col items-center bg-light dark:bg-dark'>
+      <main className='flex flex-col items-center bg-light dark:bg-dark w-full'>
         <div className='max-w-7xl py-10 px-5 w-full'>
           {/* ABOUT ME */}
           <motion.h3
