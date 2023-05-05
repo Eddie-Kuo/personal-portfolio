@@ -6,13 +6,13 @@ export default function Skill({ image, name }) {
   return (
     <motion.div
       initial={{
-        x: 50,
+        y: 50,
         opacity: 0,
       }}
       transition={{
         duration: 1.5,
       }}
-      whileInView={{ opacity: 1, x: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       className='flex flex-col items-center justify-center'
     >
