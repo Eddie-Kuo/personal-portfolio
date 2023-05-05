@@ -184,10 +184,7 @@ export default function Header() {
               bgColor='transparent'
               target='_blank'
             />
-            <button
-              onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-              className='ml-1'
-            >
+            <button onClick={toggleTheme} className='ml-1'>
               {mode === 'dark' ? (
                 <BiSun size={30} className='text-light/80' />
               ) : (

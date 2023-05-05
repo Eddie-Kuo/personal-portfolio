@@ -25,7 +25,7 @@ export default function Projects() {
         <title>Eddie Kuo | Projects</title>
       </Head>
       <main className='flex flex-col items-center bg-light dark:bg-dark'>
-        <div className='max-w-7xl py-10 px-6 w-full'>
+        <div className='max-w-7xl sm:py-10 px-6 w-full'>
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

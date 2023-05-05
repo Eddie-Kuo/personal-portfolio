@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 export default function useThemeSwitcher() {
   const preferDarkQuery = '(prefers-color-scheme: dark)';
-  const [mode, setMode] = useState('light');
+  const [mode, setMode] = React.useState('light');
 
   // if user has previously visited the site or has a preference set in local storage - set the theme accordingly
   useEffect(() => {
