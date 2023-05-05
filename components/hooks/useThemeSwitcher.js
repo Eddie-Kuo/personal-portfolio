@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function useThemeSwitcher() {
   const preferDarkQuery = '(prefers-color-scheme: dark)';
-  const [mode, setMode] = useState('');
+  const [mode, setMode] = useState('light');
 
   // if user has previously visited the site or has a preference set in local storage - set the theme accordingly
   useEffect(() => {
@@ -18,6 +18,7 @@ export default function useThemeSwitcher() {
     }
   }, []);
 
+  // setting the mode when toggled
   useEffect(() => {
     if (mode === 'dark') {
       window.localStorage.setItem('theme', 'dark');
