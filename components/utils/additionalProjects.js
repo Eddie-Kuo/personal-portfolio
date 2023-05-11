@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const additionalProjects = [
   {
     id: 1,
@@ -8,12 +10,11 @@ const additionalProjects = [
   },
   {
     id: 2,
-    name: 'Noughts and Crosses',
-    description:
-      'A two player tic tac toe game built with React and deployed through Netlify. A simple yet complex game to build which is perfect practice for managing state.',
-    githubLink: 'https://github.com/Eddie-Kuo/tic-tac-toe-react-fs-6',
-    deployedLink: 'https://zingy-chebakia-639cac.netlify.app/',
-    tech: ['React', 'Netlify'],
+    name: 'Whisper Chatting App',
+    description: `A fullstack chatting app utilizing Google OAuth and Upstash Redis for real-time messaging along with full friend list features. Add me through 'eddiekuo97@gmail.com' to try it out!`,
+    githubLink: 'https://github.com/Eddie-Kuo/whisper',
+    deployedLink: 'https://whisper-theta.vercel.app/',
+    tech: ['NextJS', 'TailwindCSS', 'TypeScript'],
   },
   {
     id: 3,
