@@ -10,7 +10,7 @@ const additionalProjects = [
   },
   {
     id: 2,
-    name: 'Whisper Chatting App',
+    name: 'Social Chatting App',
     description: `A fullstack chatting app utilizing Google OAuth and Upstash Redis for real-time messaging along with full friend list features. Add me through 'eddiekuo97@gmail.com' to try it out!`,
     githubLink: 'https://github.com/Eddie-Kuo/whisper',
     deployedLink: 'https://whisper-theta.vercel.app/',
