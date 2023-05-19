@@ -6,18 +6,18 @@ const skills = [
   },
   {
     id: 2,
-    name: 'Node.Js',
-    link: 'https://cdn.sanity.io/images/ltuexkre/production/28cdc2c56750f218336fa8f3a528b5c6935c8f43-500x500.png',
+    name: 'TypeScript',
+    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/typescript.svg',
   },
   {
     id: 3,
-    name: 'Postgres',
+    name: 'PostgreSQL',
     link: 'https://cdn.sanity.io/images/ltuexkre/production/9c1587d869001b2a2e479b5fdf92a4c14d3cfd6f-500x500.png',
   },
   {
     id: 4,
-    name: 'VSCode',
-    link: 'https://cdn.sanity.io/images/ltuexkre/production/da55259f760c8c5606b1cab6e6a9f61bbc60bf0d-500x500.png',
+    name: 'Node.Js',
+    link: 'https://cdn.sanity.io/images/ltuexkre/production/28cdc2c56750f218336fa8f3a528b5c6935c8f43-500x500.png',
   },
   {
     id: 5,
@@ -26,7 +26,7 @@ const skills = [
   },
   {
     id: 6,
-    name: 'Javascript',
+    name: 'JavaScript',
     link: 'https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png',
   },
   {
