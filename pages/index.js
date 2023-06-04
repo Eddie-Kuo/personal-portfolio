@@ -44,7 +44,7 @@ export default function Home() {
 
             <div className='pt-5'>
               <Link
-                href='/updatedResume.pdf'
+                href='/Resume.pdf'
                 className='px-6 py-2 my-1 hover:border border-darkRings rounded-full uppercase text-sm tracking-widest text-darkText dark:text-light transition-all hover:text-highlight/60 dark:hover:text-highlight/80 dark:border-blueRings'
                 target='_blank'
               >
