@@ -31,7 +31,7 @@ export default function AdditionalProjectCard({
     >
       <div
         onClick={handleClick}
-        className='flex flex-col border border-dark bg-darkBase/30 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/60 cursor-pointer h-full dark:bg-light/70 dark:hover:bg-highlight/90'
+        className='flex flex-col border border-dark/30 rounded-lg bg-darkBase/10 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer h-full dark:bg-light/60 dark:hover:bg-light'
       >
         <div className='flex flex-row justify-between w-full'>
           <AiOutlineFolderOpen size={30} color='grey' />
@@ -55,7 +55,9 @@ export default function AdditionalProjectCard({
         </div>
         <h3 className='my-2 font-serif font-bold'>{name}</h3>
         <p className='text-start font-serif h-[50%]'>{description}</p>
-        <ul className='flex flex-row items-start gap-2 mt-8'>{techStack}</ul>
+        <ul className='flex flex-row items-start gap-2 mt-8 font-semibold'>
+          {techStack}
+        </ul>
       </div>
     </motion.div>
   );
