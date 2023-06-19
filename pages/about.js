@@ -33,7 +33,6 @@ export default function About() {
             About Me
           </motion.h3>
           <div className='flex flex-col md:flex-row items-center gap-10 w-full p-3'>
-            {/* <AboutImage /> */}
             <motion.img
               initial={{ x: -20, opacity: 0.8 }}
               animate={{ x: 0, opacity: 1 }}

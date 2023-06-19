@@ -16,9 +16,7 @@ export default function ProjectCardThree() {
         <ProjectImage
           className='rounded-lg w-[700px] h-[380px] md:w-[450px] md:h-[300px] lg:w-[550px] lg:h-[400px] opacity-80 hover:opacity-100'
           link='https://collabomusic.co/'
-          image={
-            'https://user-images.githubusercontent.com/73365865/218589174-efd9e3d0-7613-480d-9894-33782eac1cd1.jpg'
-          }
+          image={'/images/CollaboImage.jpeg'}
         />
 
         <div className='absolute rounded-lg bg-dark/75 top-0 bottom-0 right-0 left-0 flex flex-col items-start justify-center md:hidden z-10 px-8 gap-0.5'>

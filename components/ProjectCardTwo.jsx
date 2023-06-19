@@ -48,9 +48,7 @@ export default function ProjectCardTwo() {
         <ProjectImage
           className='rounded-lg w-[700px] h-[380px] md:w-[450px] md:h-[300px] lg:w-[550px] lg:h-[400px] absolute right-0 top-0 bottom-0 md:mt-10 lg:mt-0 opacity-80 hover:opacity-100'
           link='https://sound-palette.netlify.app/'
-          image={
-            'https://user-images.githubusercontent.com/73365865/218589321-98ceaccf-2dfb-4cdb-8067-1e7ca791acf2.jpg'
-          }
+          image={'/images/SPImage.jpeg'}
         />
 
         <div className='absolute rounded-lg bg-dark/75 top-0 bottom-0 right-0 left-0 flex flex-col items-start justify-center md:hidden z-10 px-8 gap-0.5'>
