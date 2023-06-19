@@ -5,8 +5,6 @@ import { motion } from 'framer-motion';
 import skills from '../components/utils/skills';
 import skillSetTwo from '../components/utils/skillSetTwo';
 import Skill from '../components/Skill';
-import Image from 'next/image';
-import AboutImage from '../components/AboutImage';
 
 export default function About() {
   const topSkillsList = skills.map((skill) => (
@@ -78,20 +76,6 @@ export default function About() {
           <div className='flex flex-col items-center w-full max-w-7xl pb-3 mb-32'>
             <div className='grid grid-cols-4 gap-2'>{bottomSkillsList}</div>
           </div>
-          {/* <h3 className='uppercase tracking-[20px] text 2xl font-bold'>
-            Education
-          </h3> */}
-          {/* <motion.h3
-            initial={{ y: -50, opacity: 0 }}
-            transition={{ duration: 1.5 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            className='uppercase tracking-[20px] text-xl font-bold text-center my-8 sm:my-16'
-          >
-            Education
-          </motion.h3>
-          <div className='flex flex-col items-center py-3'>
-            <p></p>
-          </div> */}
         </div>
       </main>
     </>
