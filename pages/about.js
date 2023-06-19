@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import skills from '../components/utils/skills';
 import skillSetTwo from '../components/utils/skillSetTwo';
 import Skill from '../components/Skill';
+import Image from 'next/image';
+import AboutImage from '../components/AboutImage';
 
 export default function About() {
   const topSkillsList = skills.map((skill) => (
@@ -31,11 +33,12 @@ export default function About() {
             About Me
           </motion.h3>
           <div className='flex flex-col md:flex-row items-center gap-10 w-full p-3'>
+            {/* <AboutImage /> */}
             <motion.img
               initial={{ x: -20, opacity: 0.8 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1.5 }}
-              src='https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/FBD69CB0-F50D-4F79-AFCE-DEB49D9309ED_1_201_a.jpeg'
+              src={'/images/aboutPic.jpeg'}
               alt='profile-picture'
               width={350}
               height={450}
