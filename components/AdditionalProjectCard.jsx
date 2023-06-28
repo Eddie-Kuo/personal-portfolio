@@ -24,10 +24,10 @@ export default function AdditionalProjectCard({
 
   return (
     <motion.div
-      initial={{ y: 30, opacity: 0.5 }}
-      whileInView={{ y: 0, opacity: 1 }}
+      initial={{ y: 60 }}
+      whileInView={{ y: 0, opacity: [0.5, 0.8, 1] }}
       viewport={{ once: true }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 0.5 }}
     >
       <div
         onClick={handleClick}

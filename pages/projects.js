@@ -45,7 +45,7 @@ export default function Projects() {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 0.5 }}
             className='tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-10 sm:my-24 text-darkText dark:text-light'
           >
             Other Notable Projects
