@@ -4,9 +4,9 @@ const additionalProjects = [
   {
     id: 1,
     name: 'Intergalactic Space Escape',
-    description: `An interactive escape room style game to be played right inside your terminal. Using arrow to navigate through each room with prompts and actions, it's up to you to find your way out.`,
+    description: `An interactive escape room style game to be played right inside your terminal. Using arrow keys to navigate through each room with prompts and actions, it's up to you to find your way out.`,
     githubLink: 'https://github.com/Eddie-Kuo/intergalactic-space-escape',
-    tech: ['Node.js', 'Express', 'Supertest'],
+    tech: ['Node.js', 'Express', 'Supertest', 'SQL'],
   },
   {
     id: 2,

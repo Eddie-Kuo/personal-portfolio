@@ -55,7 +55,7 @@ export default function AdditionalProjectCard({
         </div>
         <h3 className='my-2 font-serif font-bold'>{name}</h3>
         <p className='text-start font-serif h-[50%]'>{description}</p>
-        <ul className='flex flex-row items-start gap-2 mt-8 font-semibold'>
+        <ul className='flex flex-row items-start gap-2 mt-8 font-semibold text-sm '>
           {techStack}
         </ul>
       </div>

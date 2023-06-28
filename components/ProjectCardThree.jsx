@@ -64,6 +64,7 @@ export default function ProjectCardThree() {
             <li>CSS</li>
             <li>Javascript</li>
             <li>React</li>
+            <li>Supabase</li>
           </ul>
           <ul className='flex flex-row gap-2 justify-end font-serif text-md pt-3'>
             <a href='https://github.com/Collabo-Team/collabo' target='_blank'>
