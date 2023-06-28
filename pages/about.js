@@ -23,18 +23,18 @@ export default function About() {
         <div className='max-w-7xl sm:py-10 px-5 w-full'>
           {/* ABOUT ME */}
           <motion.h3
-            initial={{ y: -50, opacity: 0 }}
+            initial={{ y: -10, opacity: 0.2 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1 }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             About Me
           </motion.h3>
           <div className='flex flex-col md:flex-row items-center gap-10 w-full p-3'>
             <motion.img
-              initial={{ x: -20, opacity: 0.8 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1.5 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0, opacity: [0.9, 1] }}
+              transition={{ duration: 0.5 }}
               src={'/images/aboutPic.jpeg'}
               alt='profile-picture'
               width={350}
@@ -42,9 +42,9 @@ export default function About() {
               className='w-60 h-60 rounded-full md:w-[350px] md:h-[400px] md:rounded-lg lg:w-[500px] lg:h-[600px]'
             />
             <motion.div
-              initial={{ x: 20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1.5 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0, opacity: [0, 0, 0.2, 0.4, 0.8, 0.9, 1] }}
+              transition={{ duration: 2 }}
               className='text-base text-darkText dark:text-light'
             >
               Hi! My name is Eddie and I'm a full-stack software engineer based
@@ -62,10 +62,10 @@ export default function About() {
 
           {/* TECH STACK */}
           <motion.h3
-            initial={{ y: -50, opacity: 0 }}
+            initial={{ y: -10, opacity: 0.2 }}
             animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.5 }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             Tech Stack

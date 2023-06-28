@@ -27,10 +27,10 @@ export default function Projects() {
       <main className='flex flex-col items-center bg-light dark:bg-dark'>
         <div className='max-w-7xl sm:py-10 px-6 w-full'>
           <motion.h3
-            initial={{ y: -50, opacity: 0 }}
+            initial={{ y: -10, opacity: 0.2 }}
             animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.5 }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:mb-24 sm:mt-16 text-darkText dark:text-light'
           >
             Some Things I've Built
