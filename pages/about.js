@@ -1,18 +1,27 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, loadingContainer } from 'framer-motion';
 import skills from '../components/utils/skills';
-import skillSetTwo from '../components/utils/skillSetTwo';
 import Skill from '../components/Skill';
 
 export default function About() {
-  const topSkillsList = skills.map((skill) => (
+  const skillSet = skills.map((skill) => (
     <Skill key={skill.id} name={skill.name} image={skill.link} />
   ));
-  const bottomSkillsList = skillSetTwo.map((skill) => (
-    <Skill key={skill.id} name={skill.name} image={skill.link} />
-  ));
+
+  const loadingContainerVariants = {
+    start: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+    end: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
   return (
     <>
@@ -71,10 +80,15 @@ export default function About() {
             Tech Stack
           </motion.h3>
           <div className='flex flex-col items-center w-full py-3  max-w-7xl'>
-            <div className='grid grid-cols-4 gap-2'>{topSkillsList}</div>
-          </div>
-          <div className='flex flex-col items-center w-full max-w-7xl pb-3 mb-32'>
-            <div className='grid grid-cols-4 gap-2'>{bottomSkillsList}</div>
+            <motion.div
+              style={loadingContainer}
+              variants={loadingContainerVariants}
+              initial='start'
+              animate='end'
+              className='grid grid-cols-4 gap-2'
+            >
+              {skillSet}
+            </motion.div>
           </div>
         </div>
       </main>

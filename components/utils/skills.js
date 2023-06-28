@@ -39,6 +39,41 @@ const skills = [
     name: 'CSS3',
     link: 'https://cdn.sanity.io/images/ltuexkre/production/4d05ea180968c83605afe80a2617de5fb71744e2-500x500.png',
   },
+  {
+    id: 9,
+    name: 'MySQL',
+    link: 'https://cdn.sanity.io/images/ltuexkre/production/6077d4327de2a7b28008b4235fa6c6dd5d381e7e-500x500.png',
+  },
+  {
+    id: 10,
+    name: 'Express.Js',
+    link: 'https://img.icons8.com/office/256/express-js.png',
+  },
+  {
+    id: 11,
+    name: 'Expo',
+    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/expo-icon.png',
+  },
+  {
+    id: 12,
+    name: 'Supabase',
+    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/supabase-icon.png',
+  },
+  {
+    id: 13,
+    name: 'Next.Js',
+    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/nextjs-icon.png',
+  },
+  {
+    id: 14,
+    name: 'TailwindCss',
+    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/tailwaindCSS-icon.png',
+  },
+  {
+    id: 15,
+    name: 'Firebase',
+    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/firebase-1-logo.png',
+  },
 ];
 
 export default skills;
