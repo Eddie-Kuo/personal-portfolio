@@ -11,9 +11,9 @@ const additionalProjects = [
   {
     id: 2,
     name: 'ChatGPT Messenger',
-    description: `A fullstack chatting app utilizing Facebook Messenger UI and OpenAi for the ultimate chatting experience. Either start a chat with a registered user or ask ChatGPT what's on your mind. Current work in progress.`,
+    description: `A fullstack chatting app utilizing Facebook Messenger UI and OpenAi for the ultimate chatting experience. Either start a chat with a registered user or ask ChatGPT what's on your mind. Currently implementing Ai functionality.`,
     githubLink: 'https://github.com/Eddie-Kuo/chatgpt-messenger',
-    // deployedLink: 'https://whisper-theta.vercel.app/',
+    deployedLink: 'https://chatgpt-messenger-mauve-nu.vercel.app/',
     tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'MongoDb'],
   },
   {
