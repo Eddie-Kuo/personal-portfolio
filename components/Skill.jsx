@@ -3,23 +3,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function Skill({ image, name }) {
-  const loadingCircleVariants = {
-    start: {
-      y: '25%',
-    },
-    end: {
-      y: '0%',
-    },
-  };
-  const loadingCircleTransition = {
-    duration: 0.5,
-    ease: 'easeInOut',
-  };
   return (
     <motion.div
-      variants={loadingCircleVariants}
-      transition={loadingCircleTransition}
-      viewport={{ once: true }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
       className='flex flex-col items-center justify-center'
     >
       <Image

@@ -10,19 +10,6 @@ export default function About() {
     <Skill key={skill.id} name={skill.name} image={skill.link} />
   ));
 
-  const loadingContainerVariants = {
-    start: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-    end: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
   return (
     <>
       <Head>
@@ -80,15 +67,7 @@ export default function About() {
             Tech Stack
           </motion.h3>
           <div className='flex flex-col items-center w-full py-3  max-w-7xl'>
-            <motion.div
-              style={loadingContainer}
-              variants={loadingContainerVariants}
-              initial='start'
-              animate='end'
-              className='grid grid-cols-4 gap-2'
-            >
-              {skillSet}
-            </motion.div>
+            <div className='grid grid-cols-4 gap-2'>{skillSet}</div>
           </div>
         </div>
       </main>
