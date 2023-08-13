@@ -10,8 +10,8 @@ const additionalProjects = [
   },
   {
     id: 2,
-    name: 'ChatGPT Messenger',
-    description: `A fullstack chatting app utilizing Facebook Messenger UI and OpenAi for the ultimate chatting experience. Either start a chat with a registered user or ask ChatGPT what's on your mind. Currently implementing Ai functionality.`,
+    name: 'Facebook Messenger',
+    description: `A fullstack Facebook Messenger clone, built with Next.js, TailwindCSS, Typescript, and MongoDB. Users can create an account, login, and chat with other users in real time with Pusher.`,
     githubLink: 'https://github.com/Eddie-Kuo/chatgpt-messenger',
     deployedLink: 'https://chatgpt-messenger-mauve-nu.vercel.app/',
     tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'MongoDb'],
