@@ -128,7 +128,7 @@ export default function Header() {
           initial={{ scale: 0, opacity: 0.75, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.01 }}
-          className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed bg-[#bababa]/80 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300 z-50 dark:bg-dark/70'
+          className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed bg-[#bababa]/80 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300 z-50 dark:bg-[#424242]/80'
         >
           <button
             className='hidden lg:flex flex-col justify-center items-center fixed top-0 left-0 p-10'

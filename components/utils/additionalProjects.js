@@ -27,6 +27,3 @@ const additionalProjects = [
 ];
 
 export { additionalProjects };
-
-// todo: loading state/ page transition
-// todo: animation of the modal
