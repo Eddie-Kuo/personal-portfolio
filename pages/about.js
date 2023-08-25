@@ -41,18 +41,20 @@ export default function About() {
               initial={{ y: 20 }}
               animate={{ y: 0, opacity: [0, 0, 0.2, 0.4, 0.8, 0.9, 1] }}
               transition={{ duration: 2 }}
-              className='text-base text-darkText dark:text-light'
+              className='text-base text-darkText dark:text-light max-w-xl'
             >
               Hi! My name is Eddie and I'm a full-stack software engineer based
               in Austin, Texas. With a specialty in Javascript and experience in
-              building out full-stack applications from scratch, I have found a
-              passion in writing software that is focused on delivering the best
-              user experience. <br />
-              <br /> What first intrigued me about tech was the power we are
-              given as users. All the information in the world rests right in
-              the palm of our hands. Now as the developer, I have made it my
-              goal to create applications that will in hopes, simplify people's
-              lives one line of code at a time.
+              building out full-stack web applications from scratch, I have
+              found a passion in writing software that is focused on delivering
+              the best user experience. I enjoy working in diverse teams to
+              implement and optimize solutions for complex problems. <br />
+              <br /> What first intrigued me about tech is the power we are
+              given as users. Nowadays, many daily problems that the average
+              consumer faces can be solved through an app with the swipe of a
+              finger or a click of a button. Now as the developer, I have made
+              it my goal to create applications that will in hopes, contribute
+              in simplifying people's lives one line of code at a time.
             </motion.div>
           </div>
 
