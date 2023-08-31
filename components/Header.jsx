@@ -140,19 +140,19 @@ export default function Header() {
 
           <nav className='flex flex-col sm:flex-row justify-center items-center pt-24 px-36'>
             <PopupNavLink
-              href='/'
+              href='#home'
               title='Home'
               className='sm:mr-6 text-dark dark:text-light/90'
               onClick={handleClick}
             />
             <PopupNavLink
-              href='/about'
+              href='#about'
               title='About'
               className='sm:mx-6 text-dark dark:text-light/90'
               onClick={handleClick}
             />
             <PopupNavLink
-              href='/projects'
+              href='#projects'
               title='Projects'
               className='sm:ml-6 text-dark dark:text-light/90'
               onClick={handleClick}

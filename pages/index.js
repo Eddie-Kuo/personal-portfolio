@@ -23,11 +23,11 @@ export default function Home() {
       <Head>
         <title>Eddie Kuo | Home</title>
       </Head>
-      <main
-        className='flex flex-col justify-center items-center bg-light dark:bg-dark'
-        id='home'
-      >
-        <div className='h-screen flex flex-col justify-center items-center text-center max-w-7xl overflow-x-hidden sm:overflow-visible pt-36 sm:pt-0 '>
+      <main className='flex flex-col justify-center items-center bg-light dark:bg-dark'>
+        <div
+          className='h-screen flex flex-col justify-center items-center text-center max-w-7xl overflow-x-hidden sm:overflow-visible pt-36 sm:pt-0'
+          id='home'
+        >
           <BackgroundCircles />
           <Image
             src='/images/headshot.jpeg'
