@@ -25,6 +25,7 @@ export default function About() {
               duration: 1.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
+            viewport={{ once: true }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             About Me
@@ -71,6 +72,7 @@ export default function About() {
               duration: 1.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
+            viewport={{ once: true }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             Tech Stack

@@ -27,10 +27,10 @@ export default function Home() {
         className='flex flex-col justify-center items-center bg-light dark:bg-dark'
         id='home'
       >
-        <div className='h-screen flex flex-col justify-center items-center text-center max-w-7xl overflow-x-hidden sm:overflow-visible pt-36 sm:pt-0'>
+        <div className='h-screen flex flex-col justify-center items-center text-center max-w-7xl overflow-x-hidden sm:overflow-visible pt-36 sm:pt-0 '>
           <BackgroundCircles />
           <Image
-            src='https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/IMG_1218%202.JPG'
+            src='/images/headshot.jpeg'
             width={200}
             height={200}
             alt='hero-picture'

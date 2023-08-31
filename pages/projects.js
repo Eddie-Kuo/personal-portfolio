@@ -34,6 +34,7 @@ export default function Projects() {
               duration: 1.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
+            viewport={{ once: true }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:mb-24 sm:mt-16 text-darkText dark:text-light'
           >
             Some Things I've Built
@@ -51,6 +52,7 @@ export default function Projects() {
               duration: 1.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
+            viewport={{ once: true }}
             className='tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-10 sm:my-24 text-darkText dark:text-light'
           >
             Other Notable Projects

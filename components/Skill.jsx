@@ -5,13 +5,14 @@ import { motion } from 'framer-motion';
 export default function Skill({ image, name }) {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
+      initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01],
+        duration: 1.2,
+        delay: 0.3,
+        ease: [0, 0.85, 0.35, 1],
       }}
+      viewport={{ once: true }}
       className='flex flex-col items-center justify-center'
     >
       <Image
