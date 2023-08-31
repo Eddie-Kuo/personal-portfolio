@@ -35,7 +35,7 @@ export default function AdditionalProjectCard({
       <h3 className='py-2 dark:text-light font-serif font-bold'>{name}</h3>
       <div
         onClick={handleClick}
-        className='flex flex-col border border-dark/30 rounded-lg bg-darkBase/10 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer h-[90%] dark:bg-light/60 dark:hover:bg-light overflow-x-hidden relative max-w-md'
+        className='flex flex-col border border-dark/30 rounded-lg bg-darkBase/10 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer h-[90%] dark:bg-light/60 dark:hover:bg-light overflow-x-hidden relative max-w-md  opacity-90'
       >
         <Image
           src={picture}

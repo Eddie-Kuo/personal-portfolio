@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import BackgroundCircles from '../components/BackgroundCircles';
+import About from './about';
+import Projects from './projects';
 
 export default function Home() {
   const [text, count] = useTypewriter({
@@ -21,8 +23,11 @@ export default function Home() {
       <Head>
         <title>Eddie Kuo | Home</title>
       </Head>
-      <main className='flex justify-center items-center bg-light dark:bg-dark'>
-        <div className='h-screen flex flex-col justify-center items-center text-center max-w-7xl overflow-x-hidden sm:overflow-visible pt-10 sm:pt-0'>
+      <main
+        className='flex flex-col justify-center items-center bg-light dark:bg-dark'
+        id='home'
+      >
+        <div className='h-screen flex flex-col justify-center items-center text-center max-w-7xl overflow-x-hidden sm:overflow-visible pt-36 sm:pt-0'>
           <BackgroundCircles />
           <Image
             src='https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/IMG_1218%202.JPG'
@@ -60,6 +65,16 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* about section */}
+        <section id='about'>
+          <About />
+        </section>
+
+        {/* projects section */}
+        <section id='projects'>
+          <Projects />
+        </section>
       </main>
     </>
   );
