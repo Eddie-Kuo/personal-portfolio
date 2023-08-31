@@ -41,7 +41,7 @@ export default function About() {
               initial={{ y: 20 }}
               animate={{ y: 0, opacity: [0, 0, 0.2, 0.4, 0.8, 0.9, 1] }}
               transition={{ duration: 2 }}
-              className='text-base text-darkText dark:text-light max-w-xl'
+              className='text-base text-darkText dark:text-light max-w-xl text-center sm:text-left'
             >
               Hi! My name is Eddie and I'm a full-stack software engineer based
               in Austin, Texas. With a specialty in Javascript and experience in
