@@ -6,6 +6,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import BackgroundCircles from '../components/BackgroundCircles';
 import About from './about';
 import Projects from './projects';
+import ContactMe from './contactMe';
 
 export default function Home() {
   const [text, count] = useTypewriter({
@@ -74,6 +75,10 @@ export default function Home() {
         {/* projects section */}
         <section id='projects'>
           <Projects />
+        </section>
+
+        <section>
+          <ContactMe />
         </section>
       </main>
     </>

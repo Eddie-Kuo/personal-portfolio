@@ -23,7 +23,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Eddie Kuo | Projects</title>
+        <title>Eddie Kuo</title>
       </Head>
       <main className='flex flex-col items-center bg-light dark:bg-dark'>
         <div className='max-w-7xl sm:py-10 px-6 w-full'>
@@ -57,7 +57,7 @@ export default function Projects() {
           >
             Other Notable Projects
           </motion.h3>
-          <div className='grid place-content-center md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-2 mb-32'>
+          <div className='grid place-content-center md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-2 mb-16'>
             {notableProjects}
           </div>
         </div>
