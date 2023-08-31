@@ -19,22 +19,22 @@ export default function About() {
         <div className='max-w-7xl sm:py-10 px-5 w-full'>
           {/* ABOUT ME */}
           <motion.h3
-            // initial={{ y: -10, opacity: 0.2 }}
-            // animate={{ y: 0, opacity: 1 }}
-            // transition={{ duration: 1 }}
-            initial={{ y: 60 }}
-            whileInView={{ y: 0, opacity: [0.5, 0.8, 1] }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1.2,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             About Me
           </motion.h3>
           <div className='flex flex-col md:flex-row items-center gap-10 w-full p-3'>
             <motion.img
-              initial={{ y: 20 }}
-              animate={{ y: 0, opacity: [0.9, 1] }}
+              initial={{ y: 30 }}
+              whileInView={{ y: 0, opacity: [0.9, 1] }}
               transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
               src={'/images/aboutPic.jpeg'}
               alt='profile-picture'
               width={350}
@@ -42,9 +42,10 @@ export default function About() {
               className='w-60 h-60 rounded-full md:w-[350px] md:h-[400px] md:rounded-lg lg:w-[500px] lg:h-[600px]'
             />
             <motion.div
-              initial={{ y: 20 }}
-              animate={{ y: 0, opacity: [0, 0, 0.2, 0.4, 0.8, 0.9, 1] }}
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: [0, 0, 0.2, 0.4, 0.8, 0.9, 1] }}
               transition={{ duration: 2 }}
+              viewport={{ once: true }}
               className='text-base text-darkText dark:text-light max-w-xl text-center sm:text-left'
             >
               Hi! My name is Eddie and I'm a full-stack software engineer based
@@ -64,10 +65,12 @@ export default function About() {
 
           {/* TECH STACK */}
           <motion.h3
-            initial={{ y: -10, opacity: 0.2 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1.2,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             Tech Stack
