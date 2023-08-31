@@ -19,9 +19,13 @@ export default function About() {
         <div className='max-w-7xl sm:py-10 px-5 w-full'>
           {/* ABOUT ME */}
           <motion.h3
-            initial={{ y: -10, opacity: 0.2 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            // initial={{ y: -10, opacity: 0.2 }}
+            // animate={{ y: 0, opacity: 1 }}
+            // transition={{ duration: 1 }}
+            initial={{ y: 60 }}
+            whileInView={{ y: 0, opacity: [0.5, 0.8, 1] }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:my-16 text-darkText dark:text-light'
           >
             About Me
