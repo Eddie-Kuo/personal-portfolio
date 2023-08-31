@@ -28,9 +28,12 @@ export default function Projects() {
       <main className='flex flex-col items-center bg-light dark:bg-dark'>
         <div className='max-w-7xl sm:py-10 px-6 w-full'>
           <motion.h3
-            initial={{ y: -10, opacity: 0.2 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1.2,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
             viewport={{ once: true }}
             className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:mb-24 sm:mt-16 text-darkText dark:text-light'
           >
@@ -43,10 +46,13 @@ export default function Projects() {
           </div>
 
           <motion.h3
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1.2,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
             className='tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-10 sm:my-24 text-darkText dark:text-light'
           >
             Other Notable Projects

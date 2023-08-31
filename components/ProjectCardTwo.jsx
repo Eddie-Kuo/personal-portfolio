@@ -8,7 +8,7 @@ export default function ProjectCardTwo() {
     <>
       <motion.div
         initial={{ y: 60 }}
-        animate={{ y: 0, opacity: [0.5, 0.8, 1] }}
+        whileInView={{ y: 0, opacity: [0.5, 0.8, 1] }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         className='relative flex md:flex-row md:justify-between justify-center w-full h-96 items-center max-w-5xl mt-5'
