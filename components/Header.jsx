@@ -20,7 +20,7 @@ export default function Header() {
   }
 
   return (
-    <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto bg-light dark:bg-dark'>
+    <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto bg-light dark:bg-dark fixed z-30'>
       <button
         className='lg:hidden flex flex-col justify-center items-center mt-6 -ml-4 sm:mt-0 sm:ml-0 z-40 group hover:border hover:border-[rgb(54,69,79)] rounded-full h-10 w-10'
         onClick={handleClick}
@@ -59,17 +59,17 @@ export default function Header() {
         }}
       >
         <CustomLink
-          href='/'
+          href='#home'
           title='Home'
           className='mr-6 text-dark dark:text-light'
         />
         <CustomLink
-          href='/about'
+          href='#about'
           title='About'
           className='mx-6 text-dark dark:text-light'
         />
         <CustomLink
-          href='/projects'
+          href='#projects'
           title='Projects'
           className='ml-6 text-dark dark:text-light'
         />
@@ -140,19 +140,19 @@ export default function Header() {
 
           <nav className='flex flex-col sm:flex-row justify-center items-center pt-24 px-36'>
             <PopupNavLink
-              href='/'
+              href='#home'
               title='Home'
               className='sm:mr-6 text-dark dark:text-light/90'
               onClick={handleClick}
             />
             <PopupNavLink
-              href='/about'
+              href='#about'
               title='About'
               className='sm:mx-6 text-dark dark:text-light/90'
               onClick={handleClick}
             />
             <PopupNavLink
-              href='/projects'
+              href='#projects'
               title='Projects'
               className='sm:ml-6 text-dark dark:text-light/90'
               onClick={handleClick}
