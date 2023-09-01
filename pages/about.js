@@ -7,7 +7,7 @@ import Skill from '../components/Skill';
 
 export default function About() {
   const skillSet = skills.map((skill) => (
-    <Skill key={skill.id} name={skill.name} image={skill.link} />
+    <Skill key={skill.name} name={skill.name} image={skill.link} />
   ));
 
   return (
