@@ -27,8 +27,7 @@ export default function Home() {
       <main className='flex flex-col justify-center items-center bg-light dark:bg-dark'>
         <div
           className='h-screen flex flex-col justify-center items-center text-center max-w-7xl overflow-x-hidden sm:overflow-visible pt-36 sm:pt-0'
-          id='home'
-        >
+          id='home'>
           <BackgroundCircles />
           <Image
             src='/images/headshot.jpeg'
@@ -50,17 +49,15 @@ export default function Home() {
 
             <div className='pt-5'>
               <Link
-                href='/Resume.pdf'
+                href='/Edlan_Kuo_Resume_links.pdf'
                 className='px-6 py-2 my-1 hover:border border-darkRings rounded-full uppercase text-sm tracking-widest text-darkText dark:text-light transition-all hover:text-highlight/60 dark:hover:text-highlight/80 dark:border-blueRings'
-                target='_blank'
-              >
+                target='_blank'>
                 Resume
               </Link>
 
               <Link
                 href='mailto:eddiekuo97@gmail.com'
-                className='px-6 py-2 my-1 hover:border hover:border-darkRings rounded-full uppercase text-sm tracking-widest text-darkText dark:text-light transition-all hover:text-highlight/60 dark:hover:text-highlight/80 dark:border-blueRings'
-              >
+                className='px-6 py-2 my-1 hover:border hover:border-darkRings rounded-full uppercase text-sm tracking-widest text-darkText dark:text-light transition-all hover:text-highlight/60 dark:hover:text-highlight/80 dark:border-blueRings'>
                 Contact
               </Link>
             </div>
