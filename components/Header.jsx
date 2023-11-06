@@ -20,26 +20,22 @@ export default function Header() {
   }
 
   return (
-    <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto bg-light dark:bg-dark fixed z-30'>
+    <header className='w-full h-20 flex justify-between items-center px-16 py-8 mx-auto bg-transparent fixed z-30'>
       <button
         className='lg:hidden flex flex-col justify-center items-center mt-6 -ml-4 sm:mt-0 sm:ml-0 z-40 group hover:border hover:border-[rgb(54,69,79)] rounded-full h-10 w-10'
-        onClick={handleClick}
-      >
+        onClick={handleClick}>
         <span
           className={`bg-dark dark:bg-light w-6 h-0.5 rounded-sm transition-all duration-300 block ${
             isOpen ? 'rotate-135 translate-y-1' : '-translate-y-0.5'
-          }`}
-        ></span>
+          }`}></span>
         <span
           className={`bg-dark dark:bg-light w-6 h-0.5 rounded-sm transition-all duration-100 block my-0.5 ${
             isOpen ? 'opacity-0' : 'opacity-100'
-          }`}
-        ></span>
+          }`}></span>
         <span
           className={`bg-dark dark:bg-light w-6 h-0.5 rounded-sm transition-all duration-300 block ${
             isOpen ? '-rotate-135 -translate-y-1' : 'translate-y-0.5'
-          }`}
-        ></span>
+          }`}></span>
       </button>
 
       <motion.div
@@ -56,8 +52,7 @@ export default function Header() {
         }}
         transition={{
           duration: 1.5,
-        }}
-      >
+        }}>
         <CustomLink
           href='#home'
           title='Home'
@@ -88,8 +83,7 @@ export default function Header() {
         }}
         transition={{
           duration: 1.5,
-        }}
-      >
+        }}>
         <SocialIcon
           url='https://www.linkedin.com/in/eddie-kuo17/'
           fgColor={mode === 'dark' ? 'white' : '#424242'}
@@ -128,12 +122,10 @@ export default function Header() {
           initial={{ scale: 0, opacity: 0.75, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.01 }}
-          className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed bg-[#bababa]/80 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300 z-50 dark:bg-[#424242]/80'
-        >
+          className='flex flex-col justify-center items-center top-1/2 left-1/2 fixed bg-[#bababa]/80 -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md md:p-16 transition ease-in duration-300 z-50 dark:bg-[#424242]/80'>
           <button
             className='hidden lg:flex flex-col justify-center items-center fixed top-0 left-0 p-10'
-            onClick={handleClick}
-          >
+            onClick={handleClick}>
             <span className='bg-dark dark:bg-light w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
             <span className='bg-dark dark:bg-light w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
           </button>

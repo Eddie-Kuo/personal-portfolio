@@ -18,6 +18,7 @@ export default function Projects() {
       deployedLink={project.deployedLink}
       tech={project.tech}
       picture={project.picture}
+      cover={project.cover}
     />
   ));
   return (
@@ -35,8 +36,7 @@ export default function Projects() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
             viewport={{ once: true }}
-            className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:mb-24 sm:mt-16 text-darkText dark:text-light'
-          >
+            className='uppercase tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-8 sm:mb-24 sm:mt-16 text-darkText dark:text-light'>
             Some Things I've Built
           </motion.h3>
           <div className='flex flex-col items-center my-10'>
@@ -53,8 +53,7 @@ export default function Projects() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
             viewport={{ once: true }}
-            className='tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-10 sm:my-24 text-darkText dark:text-light'
-          >
+            className='tracking-[10px] md:tracking-[15px] text-xl font-bold text-center my-10 sm:my-24 text-darkText dark:text-light'>
             Other Notable Projects
           </motion.h3>
           <div className='grid place-content-center md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-2 mb-16'>

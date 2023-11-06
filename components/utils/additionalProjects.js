@@ -9,6 +9,7 @@ const additionalProjects = [
     deployedLink: 'https://honest-land.vercel.app/',
     tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'PostHog'],
     picture: '/images/honest-land.png',
+    cover: '/images/sunflower-logo.png',
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const additionalProjects = [
     deployedLink: 'https://chatgpt-messenger-mauve-nu.vercel.app/',
     tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'MongoDb'],
     picture: '/images/facebook-messenger.png',
+    cover: '/images/messenger-logo.png',
   },
   {
     id: 3,
@@ -27,6 +29,16 @@ const additionalProjects = [
     deployedLink: 'https://weather-app-mu-brown.vercel.app/',
     tech: ['Next.js', 'Typescript', 'Tremor', 'TailwindCSS'],
     picture: '/images/weather-app.png',
+    cover: '/images/weather-logo.png',
+  },
+  {
+    id: 4,
+    name: 'Craft Course Learning AI',
+    description: `A fullstack web application built with Next.js, Typescript, TailwindCSS integrated with OpenAI & Youtube's API to allow users the power to generate full courses with detailed chapters along with end of module quizzes to better their learning on any given topic of choice.`,
+    githubLink: 'https://github.com/Eddie-Kuo/craft-course-learning-ai',
+    tech: ['Next.js', 'Typescript', 'TailwindCSS', 'OpenAi'],
+    picture: '/images/craft-course.png',
+    cover: '/images/ai-learning-logo.png',
   },
 ];
 

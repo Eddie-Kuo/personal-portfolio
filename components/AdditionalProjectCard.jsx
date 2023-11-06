@@ -11,11 +11,19 @@ export default function AdditionalProjectCard({
   description,
   tech,
   picture,
+  cover,
 }) {
+  const [isOpen, setIsOpen] = React.useState(false);
+
   function handleClick() {
-    deployedLink
-      ? window.open(deployedLink, '_blank')
-      : window.open(githubLink, '_blank');
+    // deployedLink
+    //   ? window.open(deployedLink, '_blank')
+    //   : window.open(githubLink, '_blank');
+    setIsOpen(!isOpen);
+  }
+
+  function closeModal() {
+    setIsOpen(!isOpen);
   }
 
   const techStack = tech.map((entry) => (
@@ -30,13 +38,33 @@ export default function AdditionalProjectCard({
       whileInView={{ y: 0, opacity: [0.5, 0.8, 1] }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className='py-2'
-    >
-      <h3 className='py-2 dark:text-light font-serif font-bold'>{name}</h3>
+      className='py-2'>
+      <h3 className='py-2 dark:text-light font-serif font-bold min-w-full'>
+        {name}
+      </h3>
+
       <div
+        className='flex flex-col rounded-lg bg-darkBase/10 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer dark:bg-light/60 dark:hover:bg-light overflow-x-hidden opacity-90'
+        onClick={handleClick}>
+        <div className='flex justify-center items-center h-60 w-full bg-darkBlueText/90'>
+          <Image
+            src={cover}
+            alt='project logo'
+            height={72}
+            width={72}
+            className='hover:opacity-0'
+          />
+          <Image
+            src={picture}
+            alt='project logo'
+            fill
+            className='opacity-0 hover:opacity-100'
+          />
+        </div>
+      </div>
+      {/* <div
         onClick={handleClick}
-        className='flex flex-col border border-dark/30 rounded-lg bg-darkBase/10 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer h-[90%] dark:bg-light/60 dark:hover:bg-light overflow-x-hidden relative max-w-md  opacity-90'
-      >
+        className='flex flex-col border border-dark/30 rounded-lg bg-darkBase/10 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer h-[90%] dark:bg-light/60 dark:hover:bg-light overflow-x-hidden relative max-w-md  opacity-90'>
         <Image
           src={picture}
           fill
@@ -65,10 +93,68 @@ export default function AdditionalProjectCard({
           </div>
         </div>
         <p className='my-4 text-start font-serif h-[50%]'>{description}</p>
-        <ul className='absolute bottom-0 py-2 flex items-start gap-2 font-semibold text-xs'>
+        <ul className='absolute bottom-0 py-6 flex items-start gap-2 font-semibold text-xs'>
           {techStack}
         </ul>
-      </div>
+      </div> */}
+      {isOpen ? (
+        <>
+          <div className='flex flex-col w-[70%] h-[70%] gap-2 top-1/2 left-1/2 fixed -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md bg-dark/90 dark:bg-light/80 z-50 overflow-y-scroll'>
+            <button
+              className='flex flex-col justify-center items-center fixed top-0 right-0 p-10 z-50'
+              onClick={closeModal}>
+              <span className='bg-dark w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
+              <span className='bg-dark w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
+            </button>
+            <div className='bg-blueRings'>
+              <Image
+                src={picture}
+                alt='project logo'
+                width={700}
+                height={300}
+                className='h-[100%] w-[100%]'
+              />
+            </div>
+
+            <div className='flex flex-col items-center p-4'>
+              <h4 className='text-light font-light dark:text-darkText'>
+                App Name
+              </h4>
+              <h1 className='font-semibold text-lg text-light mb-4 dark:text-darkText'>
+                {name}
+              </h1>
+
+              <p className='text-light font-light dark:text-darkText'>
+                Project Description:
+              </p>
+              <p className='text-center max-w-xl text-light dark:text-darkText'>
+                {description}
+              </p>
+
+              <ul className='py-6 flex flex-col sm:flex-row items-center gap-2 font-semibold text-md dark:text-darkText text-light'>
+                {techStack}
+              </ul>
+              <div className='flex flex-row gap-2 pb-3'>
+                {githubLink ? (
+                  <a href={githubLink} target='_blank'>
+                    <AiOutlineGithub size={30} color='grey' />
+                  </a>
+                ) : (
+                  ''
+                )}
+
+                {deployedLink ? (
+                  <a href={deployedLink} target='_blank'>
+                    <BiExit size={30} color='grey' />
+                  </a>
+                ) : (
+                  ''
+                )}
+              </div>
+            </div>
+          </div>
+        </>
+      ) : null}
     </motion.div>
   );
 }
