@@ -99,7 +99,7 @@ export default function AdditionalProjectCard({
       </div> */}
       {isOpen ? (
         <>
-          <div className='flex flex-col w-[70%] h-[70%] gap-2 top-1/2 left-1/2 fixed -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md bg-dark/90 dark:bg-light/80 z-50 overflow-y-scroll'>
+          <div className='flex flex-col w-[70%] h-[50%] md:w-[60%] md:h-[60%] gap-2 top-1/2 left-1/2 fixed -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md bg-dark/90 dark:bg-light/80 z-50 overflow-y-scroll'>
             <button
               className='flex flex-col justify-center items-center fixed top-0 right-0 p-10 z-50'
               onClick={closeModal}>
@@ -116,22 +116,25 @@ export default function AdditionalProjectCard({
               />
             </div>
 
-            <div className='flex flex-col items-center p-4'>
-              <h4 className='text-light font-light dark:text-darkText'>
-                App Name
+            <div className='flex flex-col items-center p-8'>
+              <h4 className='text-blueRings dark:text-darkBlueText font-light'>
+                App Name:
               </h4>
-              <h1 className='font-semibold text-lg text-light mb-4 dark:text-darkText'>
+              <h1 className='font-semibold text-lg mb-4 text-light dark:text-darkText'>
                 {name}
               </h1>
 
-              <p className='text-light font-light dark:text-darkText'>
+              <p className='font-light text-blueRings dark:text-darkBlueText'>
                 Project Description:
               </p>
-              <p className='text-center max-w-xl text-light dark:text-darkText'>
+              <p className='text-center max-w-xl text-light dark:text-darkText mb-4'>
                 {description}
               </p>
 
-              <ul className='py-6 flex flex-col sm:flex-row items-center gap-2 font-semibold text-md dark:text-darkText text-light'>
+              <p className='font-light text-blueRings dark:text-darkBlueText'>
+                Core Technologies:
+              </p>
+              <ul className='pb-6 flex flex-col sm:flex-row items-center gap-2 font-semibold text-md dark:text-darkText text-light'>
                 {techStack}
               </ul>
               <div className='flex flex-row gap-2 pb-3'>
