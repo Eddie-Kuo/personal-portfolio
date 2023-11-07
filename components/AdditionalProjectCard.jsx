@@ -106,7 +106,7 @@ export default function AdditionalProjectCard({
               <span className='bg-dark w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
               <span className='bg-dark w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
             </button>
-            <div className='bg-blueRings'>
+            <div>
               <Image
                 src={picture}
                 alt='project logo'
