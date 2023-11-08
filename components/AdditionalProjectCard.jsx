@@ -44,22 +44,23 @@ export default function AdditionalProjectCard({
       </h3>
 
       <div
-        className='flex flex-col rounded-lg bg-darkBase/10 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer dark:bg-light/60 dark:hover:bg-light overflow-x-hidden opacity-90'
+        className='flex flex-col rounded-lg hover:-translate-y-2 duration-300 cursor-pointer overflow-x-hidden opacity-90 p-6 border border-dark/30 dark:border-light/30 max-w-md bg-darkBase/30 relative'
+        // className='flex flex-col border border-dark/30 rounded-lg bg-darkBase/10 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer h-[90%] dark:bg-light/60 dark:hover:bg-light overflow-x-hidden relative max-w-md  opacity-90'
         onClick={handleClick}>
-        <div className='flex justify-center items-center h-60 w-full bg-darkBlueText/90'>
-          <Image
-            src={cover}
-            alt='project logo'
-            height={72}
-            width={72}
-            className='hover:opacity-0'
-          />
+        <div className='flex justify-center items-center h-44'>
           <Image
             src={picture}
             alt='project logo'
             fill
-            className='opacity-0 hover:opacity-100'
+            className='hover:opacity-5'
           />
+
+          <p className='dark:text-light text-md'>
+            <span className='font-bold text-lg dark:text-highlight text-darkBlueText'>
+              Description:{' '}
+            </span>
+            {description}
+          </p>
         </div>
       </div>
       {/* <div
