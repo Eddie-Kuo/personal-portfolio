@@ -40,6 +40,16 @@ const additionalProjects = [
     picture: '/images/craft-course.png',
     cover: '/images/ai-learning-logo.png',
   },
+  {
+    id: 5,
+    name: 'Washington Gym - Freelance',
+    description: `A Frontend freelance project built with HTML, CSS, and Javascript. Client asked for a minimalist website showcasing their business.`,
+    githubLink: 'https://github.com/Eddie-Kuo/washington-gym',
+    deployedLink: 'https://bespoke-ganache-a22553.netlify.app',
+    tech: ['HTML', 'Javascript', 'CSS', 'Netlify'],
+    picture: '/images/wg-app.png',
+    cover: '/images/gym-logo.png',
+  },
 ];
 
 export { additionalProjects };
