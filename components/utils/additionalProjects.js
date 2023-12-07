@@ -44,7 +44,7 @@ const additionalProjects = [
       'PlanetscaleDB',
       'Prisma',
     ],
-    picture: '/images/craft-course.png',
+    picture: '/images/craft-course-pic.png',
     cover: '/images/ai-learning-logo.png',
   },
   {
