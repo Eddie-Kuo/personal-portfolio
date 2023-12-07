@@ -1,8 +1,8 @@
-import React from 'react';
-import { AiOutlineFolderOpen, AiOutlineGithub } from 'react-icons/ai';
-import { BiExit } from 'react-icons/bi';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import React, { useEffect, useRef, useState } from 'react';
+import { AiOutlineFolderOpen, AiOutlineGithub } from 'react-icons/ai';
+import { BiExit } from 'react-icons/bi';
 
 export default function AdditionalProjectCard({
   deployedLink,
@@ -13,18 +13,35 @@ export default function AdditionalProjectCard({
   picture,
   cover,
 }) {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef();
 
   function handleClick() {
-    // deployedLink
-    //   ? window.open(deployedLink, '_blank')
-    //   : window.open(githubLink, '_blank');
-    setIsOpen(!isOpen);
+    if (isOpen === false) {
+      setIsOpen(true);
+    }
   }
 
   function closeModal() {
     setIsOpen(!isOpen);
   }
+
+  useEffect(() => {
+    if (isOpen === true) {
+      const handleEvent = (event) => {
+        const element = ref.current;
+        if (element && !element.contains(event.target)) {
+          setIsOpen(false);
+        }
+      };
+
+      document.addEventListener('pointerdown', handleEvent);
+
+      return () => {
+        document.removeEventListener('pointerdown', handleEvent);
+      };
+    }
+  }, [isOpen]);
 
   const techStack = tech.map((entry) => (
     <li className='font-serif' key={entry}>
@@ -63,101 +80,67 @@ export default function AdditionalProjectCard({
           </p>
         </div>
       </div>
-      {/* <div
-        onClick={handleClick}
-        className='flex flex-col border border-dark/30 rounded-lg bg-darkBase/10 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer h-[90%] dark:bg-light/60 dark:hover:bg-light overflow-x-hidden relative max-w-md  opacity-90'>
-        <Image
-          src={picture}
-          fill
-          alt='project image'
-          className='hover:opacity-5 z-10'
-        />
 
-        <div className='flex flex-row justify-between w-full'>
-          <AiOutlineFolderOpen size={30} color='grey' />
-          <div className='flex flex-row gap-2'>
-            {githubLink ? (
-              <a href={githubLink} target='_blank'>
-                <AiOutlineGithub size={30} color='grey' />
-              </a>
-            ) : (
-              ''
-            )}
+      {isOpen ? (
+        <div
+          ref={ref}
+          className='flex flex-col w-[70%] h-[50%] md:w-[60%] md:h-[60%] gap-2 top-1/2 left-1/2 fixed -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md bg-dark/90 dark:bg-light/80 z-50 overflow-y-scroll'>
+          <button
+            className='flex flex-col justify-center items-center fixed top-0 right-0 p-10 z-50'
+            onClick={closeModal}>
+            <span className='bg-dark w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
+            <span className='bg-dark w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
+          </button>
+          <div>
+            <Image
+              src={picture}
+              alt='project logo'
+              width={700}
+              height={300}
+              className='h-[100%] w-[100%]'
+            />
+          </div>
 
-            {deployedLink ? (
-              <a href={deployedLink} target='_blank'>
-                <BiExit size={30} color='grey' />
-              </a>
-            ) : (
-              ''
-            )}
+          <div className='flex flex-col items-center p-8'>
+            <h4 className='text-blueRings dark:text-darkBlueText font-light'>
+              App Name:
+            </h4>
+            <h1 className='font-semibold text-lg mb-4 text-light dark:text-darkText'>
+              {name}
+            </h1>
+
+            <p className='font-light text-blueRings dark:text-darkBlueText'>
+              Project Description:
+            </p>
+            <p className='text-center max-w-xl text-light dark:text-darkText mb-4'>
+              {description}
+            </p>
+
+            <p className='font-light text-blueRings dark:text-darkBlueText'>
+              Core Technologies:
+            </p>
+            <ul className='pb-6 flex flex-col sm:flex-row items-center gap-2 font-semibold text-md dark:text-darkText text-light'>
+              {techStack}
+            </ul>
+            <div className='flex flex-row gap-2 pb-3'>
+              {githubLink ? (
+                <a href={githubLink} target='_blank'>
+                  <AiOutlineGithub size={30} color='grey' />
+                </a>
+              ) : (
+                ''
+              )}
+
+              {deployedLink ? (
+                <a href={deployedLink} target='_blank'>
+                  <BiExit size={30} color='grey' />
+                </a>
+              ) : (
+                ''
+              )}
+            </div>
           </div>
         </div>
-        <p className='my-4 text-start font-serif h-[50%]'>{description}</p>
-        <ul className='absolute bottom-0 py-6 flex items-start gap-2 font-semibold text-xs'>
-          {techStack}
-        </ul>
-      </div> */}
-      {isOpen ? (
-        <>
-          <div className='flex flex-col w-[70%] h-[50%] md:w-[60%] md:h-[60%] gap-2 top-1/2 left-1/2 fixed -translate-x-1/2 -translate-y-1/2 rounded-xl backdrop-blur-md bg-dark/90 dark:bg-light/80 z-50 overflow-y-scroll'>
-            <button
-              className='flex flex-col justify-center items-center fixed top-0 right-0 p-10 z-50'
-              onClick={closeModal}>
-              <span className='bg-dark w-6 h-0.5 rounded-sm block rotate-45 translate-y-0.5'></span>
-              <span className='bg-dark w-6 h-0.5 rounded-sm block -rotate-45 -translate-y-0'></span>
-            </button>
-            <div>
-              <Image
-                src={picture}
-                alt='project logo'
-                width={700}
-                height={300}
-                className='h-[100%] w-[100%]'
-              />
-            </div>
-
-            <div className='flex flex-col items-center p-8'>
-              <h4 className='text-blueRings dark:text-darkBlueText font-light'>
-                App Name:
-              </h4>
-              <h1 className='font-semibold text-lg mb-4 text-light dark:text-darkText'>
-                {name}
-              </h1>
-
-              <p className='font-light text-blueRings dark:text-darkBlueText'>
-                Project Description:
-              </p>
-              <p className='text-center max-w-xl text-light dark:text-darkText mb-4'>
-                {description}
-              </p>
-
-              <p className='font-light text-blueRings dark:text-darkBlueText'>
-                Core Technologies:
-              </p>
-              <ul className='pb-6 flex flex-col sm:flex-row items-center gap-2 font-semibold text-md dark:text-darkText text-light'>
-                {techStack}
-              </ul>
-              <div className='flex flex-row gap-2 pb-3'>
-                {githubLink ? (
-                  <a href={githubLink} target='_blank'>
-                    <AiOutlineGithub size={30} color='grey' />
-                  </a>
-                ) : (
-                  ''
-                )}
-
-                {deployedLink ? (
-                  <a href={deployedLink} target='_blank'>
-                    <BiExit size={30} color='grey' />
-                  </a>
-                ) : (
-                  ''
-                )}
-              </div>
-            </div>
-          </div>
-        </>
       ) : null}
     </motion.div>
   );
