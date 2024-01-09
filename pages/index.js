@@ -1,12 +1,12 @@
-import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import React from 'react';
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from '../components/BackgroundCircles';
 import About from './about';
-import Projects from './projects';
 import ContactMe from './contactMe';
+import Projects from './projects';
 
 export default function Home() {
   const [text, count] = useTypewriter({
@@ -49,7 +49,7 @@ export default function Home() {
 
             <div className='pt-5'>
               <Link
-                href='/Edlan_Kuo_Resume.new.pdf'
+                href='/Edlan_Kuo__Resume.pdf'
                 className='px-6 py-2 my-1 hover:border border-darkRings rounded-full uppercase text-sm tracking-widest text-darkText dark:text-light transition-all hover:text-highlight/60 dark:hover:text-highlight/80 dark:border-blueRings'
                 target='_blank'>
                 Resume
