@@ -13,7 +13,7 @@ const skills = [
   },
   {
     name: 'Next.js',
-    link: 'https://trkoocuknhonyttaxwsy.supabase.co/storage/v1/object/sign/portfolio-images/NextJs?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8taW1hZ2VzL05leHRKcyIsImlhdCI6MTcwNzI1OTY3MCwiZXhwIjoyMDIyNjE5NjcwfQ.yVQE7jB0OoK78swNyOQBaOVEX2HlQPX2Om746XYuObs',
+    link: 'https://trkoocuknhonyttaxwsy.supabase.co/storage/v1/object/public/portfolio-images/NextJs',
   },
   {
     name: 'MongoDB',
