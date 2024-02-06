@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     domains: [
       'ozkuzfbdevqwhsqwknht.supabase.co',
+      'trkoocuknhonyttaxwsy.supabase.co',
       'cdn.sanity.io',
       'img.icons8.com',
       'user-images.githubusercontent.com',

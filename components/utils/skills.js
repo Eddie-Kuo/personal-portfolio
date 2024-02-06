@@ -5,15 +5,15 @@ const skills = [
   },
   {
     name: 'TypeScript',
-    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/typescript.svg',
+    link: 'https://trkoocuknhonyttaxwsy.supabase.co/storage/v1/object/sign/portfolio-images/communityIcon_4w7vh6c21f871.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8taW1hZ2VzL2NvbW11bml0eUljb25fNHc3dmg2YzIxZjg3MS53ZWJwIiwiaWF0IjoxNzA3MjU3NzY0LCJleHAiOjE3Mzg3OTM3NjR9.XRV--0jDwEgJvGse3agrXF99zw3I4PmIC7t-Z0FxM7k&t=2024-02-06T22%3A16%3A05.108Z',
   },
   {
     name: 'TailwindCSS',
-    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/tailwaindCSS-icon.png',
+    link: 'https://trkoocuknhonyttaxwsy.supabase.co/storage/v1/object/sign/portfolio-images/tailwind.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8taW1hZ2VzL3RhaWx3aW5kLnBuZyIsImlhdCI6MTcwNzI1OTAxNCwiZXhwIjoxNzA5ODUxMDE0fQ.5LkEKQ5vqcCX2_BHjBnT7rsXZzvWW4qUH5eRHr-L_8c&t=2024-02-06T22%3A36%3A54.528Z',
   },
   {
     name: 'Next.js',
-    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/nextjs-icon.png',
+    link: 'https://trkoocuknhonyttaxwsy.supabase.co/storage/v1/object/sign/portfolio-images/NextJs?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8taW1hZ2VzL05leHRKcyIsImlhdCI6MTcwNzI1ODI2NCwiZXhwIjoxNzM4Nzk0MjY0fQ.Z3RJ7O49CeS_pD6S7Ur-iMbZ_4_k9X5t1TFHucFfdHk&t=2024-02-06T22%3A24%3A24.745Z',
   },
   {
     name: 'MongoDB',
@@ -45,7 +45,7 @@ const skills = [
   },
   {
     name: 'Expo',
-    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/expo-icon.png',
+    link: 'https://trkoocuknhonyttaxwsy.supabase.co/storage/v1/object/sign/portfolio-images/expo%20(3).png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8taW1hZ2VzL2V4cG8gKDMpLnBuZyIsImlhdCI6MTcwNzI1OTM4OSwiZXhwIjoxNzA5ODUxMzg5fQ.xAFJoNg5LrYkb4cl1DtBD9D1AmeiRfEK6vWBMKdAP_I&t=2024-02-06T22%3A43%3A09.411Z',
   },
   {
     name: 'PostgreSQL',
@@ -53,11 +53,11 @@ const skills = [
   },
   {
     name: 'Supabase',
-    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/supabase-icon.png',
+    link: 'https://trkoocuknhonyttaxwsy.supabase.co/storage/v1/object/sign/portfolio-images/Supabase?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8taW1hZ2VzL1N1cGFiYXNlIiwiaWF0IjoxNzA3MjU4MjI1LCJleHAiOjE3Mzg3OTQyMjV9.remO_XoWdfiIg6NXNQ6wzhxz8FA80OAFfYs77Iut8Xw&t=2024-02-06T22%3A23%3A45.218Z',
   },
   {
     name: 'Firebase',
-    link: 'https://ozkuzfbdevqwhsqwknht.supabase.co/storage/v1/object/public/portfolio-pictures/firebase-1-logo.png',
+    link: 'https://trkoocuknhonyttaxwsy.supabase.co/storage/v1/object/sign/portfolio-images/Firebase?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8taW1hZ2VzL0ZpcmViYXNlIiwiaWF0IjoxNzA3MjU4MTk3LCJleHAiOjE3Mzg3OTQxOTd9.lGoQnIR_0wLaW58PUk7CdBtRUcFzLz-TEA-ALtbc0JY&t=2024-02-06T22%3A23%3A17.163Z',
   },
 ];
 
