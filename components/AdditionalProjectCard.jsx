@@ -12,6 +12,7 @@ export default function AdditionalProjectCard({
   tech,
   picture,
   cover,
+  note,
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef();
@@ -122,6 +123,16 @@ export default function AdditionalProjectCard({
             <ul className='pb-6 flex flex-col sm:flex-row items-center gap-2 font-semibold text-md dark:text-darkText text-light'>
               {techStack}
             </ul>
+
+            {note && (
+              <div className='flex flex-col items-center'>
+                <p className=' text-redText font-bold'>Project Note:</p>
+                <p className='text-center max-w-xl text-light dark:text-darkText mb-4'>
+                  {note}
+                </p>
+              </div>
+            )}
+
             <div className='flex flex-row gap-2 pb-3'>
               {githubLink ? (
                 <a href={githubLink} target='_blank'>

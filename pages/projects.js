@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 import React from 'react';
-import { motion } from 'framer-motion';
-import ProjectCard from '../components/ProjectCard';
-import ProjectCardTwo from '../components/ProjectCardTwo';
-import ProjectCardThree from '../components/ProjectCardThree';
 import AdditionalProjectCard from '../components/AdditionalProjectCard';
+import ProjectCard from '../components/ProjectCard';
+import ProjectCardThree from '../components/ProjectCardThree';
+import ProjectCardTwo from '../components/ProjectCardTwo';
 import { additionalProjects } from '../components/utils/additionalProjects';
 
 export default function Projects() {
@@ -19,6 +19,7 @@ export default function Projects() {
       tech={project.tech}
       picture={project.picture}
       cover={project.cover}
+      note={project.note}
     />
   ));
   return (

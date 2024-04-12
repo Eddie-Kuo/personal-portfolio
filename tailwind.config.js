@@ -39,6 +39,7 @@ module.exports = {
       textBgLight: '#c8c8c8',
       lightBlueText: '#9becfb',
       darkBlueText: '#004981',
+      redText: '	#D22B2B',
     },
   },
   plugins: [],

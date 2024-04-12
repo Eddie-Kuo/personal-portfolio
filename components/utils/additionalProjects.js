@@ -21,20 +21,11 @@ const additionalProjects = [
     picture: '/images/facebook-messenger.png',
     cover: '/images/messenger-logo.png',
   },
-  // {
-  //   id: 3,
-  //   name: 'Global Weather App',
-  //   description: `A weather app built with Next.js in Typescript incorporating "country-state-city" + "open-meteo weather api" providing all the detailed information for weather conditions around the world!`,
-  //   githubLink: 'https://github.com/Eddie-Kuo/weather-app',
-  //   deployedLink: 'https://weather-app-mu-brown.vercel.app/',
-  //   tech: ['Next.js', 'Typescript', 'Tremor', 'TailwindCSS', 'GraphQL'],
-  //   picture: '/images/weather-app.png',
-  //   cover: '/images/weather-logo.png',
-  // },
   {
     id: 4,
     name: 'Craft Course Learning AI',
     description: `A fullstack web application built with Next.js, Typescript, TailwindCSS integrated with OpenAI & Youtube's API to allow users the power to generate full courses with detailed chapters along with end of module quizzes to better their learning on any given topic of choice.`,
+    note: 'Application is currently unavailable due to PlanetscaleDB removing free tier. Migration of database is in the works.',
     githubLink: 'https://github.com/Eddie-Kuo/craft-course-learning-ai',
     tech: [
       'Next.js',
