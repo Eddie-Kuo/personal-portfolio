@@ -44,9 +44,10 @@ export default function AdditionalProjectCard({
     }
   }, [isOpen]);
 
-  const techStack = tech.map((entry) => (
+  const techStack = tech.map((entry, index) => (
     <li className='font-serif' key={entry}>
       {entry}
+      {index !== tech.length - 1 && ','}
     </li>
   ));
 
