@@ -4,7 +4,7 @@ const additionalProjects = [
   {
     id: 1,
     name: 'Honest Land - Freelance',
-    description: `A Frontend freelance project built with Next.js 13, TailwindCSS, and Typescript. The client wanted a simple, clean, and modern landing page to showcase their business. I also implemented product analytics with PostHog to analyze overall website traction`,
+    description: `A frontend freelance project built with Next.js 13, TailwindCSS, and Typescript. The client wanted a simple, clean, and modern landing page to showcase their business.`,
     githubLink: 'https://github.com/Eddie-Kuo/honest-land',
     deployedLink: 'https://honest-land.vercel.app/',
     tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'PostHog'],
@@ -24,7 +24,7 @@ const additionalProjects = [
   {
     id: 3,
     name: 'Facebook Messenger Clone',
-    description: `A fullstack Facebook Messenger clone, built with Next.js, TailwindCSS, Typescript, and MongoDB. Users can create an account, login, and chat with other users in real time with Pusher.`,
+    description: `A fullstack Facebook Messenger clone built with Next.js, TailwindCSS, Typescript, and MongoDB. Built with the intention of practicing UI skills with the replication of a popular web app using modern technologies and to learn about backend development.`,
     githubLink: 'https://github.com/Eddie-Kuo/chatgpt-messenger',
     deployedLink: 'https://chatgpt-messenger-mauve-nu.vercel.app/',
     tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'MongoDb', 'Prisma'],
@@ -34,7 +34,7 @@ const additionalProjects = [
   {
     id: 4,
     name: 'Craft Course Learning AI',
-    description: `A fullstack web application built to empower users in their learning journey with the help of AI. Users can enter a topic of choice and allow AI to generate detailed courses, chapters, and videos along with an end of course quiz to ensure proficiency on the given topic`,
+    description: `A fullstack web application built to empower users in their learning journey with the help of AI. Users can enter a topic of choice and allow AI to generate a detailed course, chapters, and related videos along with an "end of course" quiz to ensure proficiency on the given topic`,
     note: 'Application is currently unavailable due to PlanetscaleDB removing free tier. Migration of database is in the works.',
     githubLink: 'https://github.com/Eddie-Kuo/craft-course-learning-ai',
     tech: [
