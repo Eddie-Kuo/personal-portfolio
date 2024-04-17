@@ -18,7 +18,7 @@ const additionalProjects = [
     githubLink:
       'https://github.com/Eddie-Kuo/weather-app-react-native?tab=readme-ov-file',
     tech: ['React-Native Expo SDK 49', 'Javascript', 'Weather API'],
-    picture: '/images/mobile-weather-app.png',
+    picture: '/images/WeatherAppCover.png',
     cover: '/images/mobile-weather-app.png',
   },
   {

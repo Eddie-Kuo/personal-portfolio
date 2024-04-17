@@ -66,7 +66,7 @@ export default function AdditionalProjectCard({
         className='flex flex-col rounded-lg hover:-translate-y-2 duration-300 cursor-pointer overflow-x-hidden opacity-90 p-6 border border-dark/30 dark:border-light/30 max-w-md bg-darkBase/30 relative'
         // className='flex flex-col border border-dark/30 rounded-lg bg-darkBase/10 p-5 hover:-translate-y-2 duration-300 hover:bg-highlight/50 cursor-pointer h-[90%] dark:bg-light/60 dark:hover:bg-light overflow-x-hidden relative max-w-md  opacity-90'
         onClick={handleClick}>
-        <div className='flex justify-center items-center h-44'>
+        <div className='flex justify-center items-center h-48'>
           <Image
             src={picture}
             alt='project logo'
