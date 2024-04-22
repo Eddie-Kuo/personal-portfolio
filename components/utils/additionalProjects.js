@@ -8,7 +8,7 @@ const additionalProjects = [
     githubLink: 'https://github.com/Eddie-Kuo/honest-land',
     deployedLink: 'https://honest-land.vercel.app/',
     tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'PostHog'],
-    picture: '/images/honest-land.png',
+    picture: '/images/Honest-cover.png',
     cover: '/images/sunflower-logo.png',
   },
   {
@@ -18,18 +18,8 @@ const additionalProjects = [
     githubLink:
       'https://github.com/Eddie-Kuo/weather-app-react-native?tab=readme-ov-file',
     tech: ['React-Native Expo SDK 49', 'Javascript', 'Weather API'],
-    picture: '/images/WeatherAppCover.png',
+    picture: '/images/Weather-cover-v2.png',
     cover: '/images/mobile-weather-app.png',
-  },
-  {
-    id: 3,
-    name: 'Facebook Messenger Clone',
-    description: `A fullstack Facebook Messenger clone built with Next.js, TailwindCSS, Typescript, and MongoDB. Built with the intention of practicing UI skills with the replication of a popular web app using modern technologies and to learn about backend development.`,
-    githubLink: 'https://github.com/Eddie-Kuo/chatgpt-messenger',
-    deployedLink: 'https://chatgpt-messenger-mauve-nu.vercel.app/',
-    tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'MongoDb', 'Prisma'],
-    picture: '/images/facebook-messenger.png',
-    cover: '/images/messenger-logo.png',
   },
   {
     id: 4,
@@ -45,7 +35,7 @@ const additionalProjects = [
       'PlanetscaleDB',
       'Prisma',
     ],
-    picture: '/images/craft-course-pic.png',
+    picture: '/images/Craft-cover.jpg',
     cover: '/images/ai-learning-logo.png',
   },
   {
@@ -55,8 +45,18 @@ const additionalProjects = [
     githubLink: 'https://github.com/Eddie-Kuo/washington-gym',
     deployedLink: 'https://bespoke-ganache-a22553.netlify.app',
     tech: ['HTML', 'CSS', 'Javascript', 'Netlify'],
-    picture: '/images/wg-app.png',
+    picture: '/images/WG-cover.jpg',
     cover: '/images/gym-logo.png',
+  },
+  {
+    id: 3,
+    name: 'Facebook Messenger Clone',
+    description: `A fullstack Facebook Messenger clone built with Next.js, TailwindCSS, Typescript, and MongoDB. Built with the intention of practicing UI skills with the replication of a popular web app using modern technologies and to learn about backend development.`,
+    githubLink: 'https://github.com/Eddie-Kuo/chatgpt-messenger',
+    deployedLink: 'https://chatgpt-messenger-mauve-nu.vercel.app/',
+    tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'MongoDb', 'Prisma'],
+    picture: '/images/Messenger-cover.jpg',
+    cover: '/images/messenger-logo.png',
   },
 ];
 
