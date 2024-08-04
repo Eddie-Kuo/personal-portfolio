@@ -2,23 +2,6 @@ import Link from "next/link";
 
 const additionalProjects = [
   {
-    id: 4,
-    name: "IntelliCourse.AI",
-    description: `A fullstack web application built to empower users in their learning journey with the help of AI. Users can enter a topic of choice and allow AI to generate a detailed course, chapters, and related videos along with an "end of course" quiz to ensure proficiency on the given topic`,
-    githubLink: "https://github.com/Eddie-Kuo/intellicourse-ai",
-    deployedLink: "https://intellicourse-ai.vercel.app/",
-    tech: [
-      "Next.js",
-      "Typescript",
-      "TailwindCSS",
-      "OpenAi",
-      "Turso",
-      "Drizzle",
-    ],
-    picture: "/images/Craft-cover.jpg",
-    cover: "/images/ai-learning-logo.png",
-  },
-  {
     id: 1,
     name: "Honest Land - Freelance",
     description: `A frontend freelance project built with Next.js 13, TailwindCSS, and Typescript. The client wanted a simple, clean, and modern landing page to showcase their business.`,
